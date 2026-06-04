@@ -15,23 +15,32 @@ if [[ ! -f "$ROOT_DIR/package.json" ]]; then
   exit 1
 fi
 
-for cmd in tmux nvim opencode mise; do
+for cmd in tmux nvim opencode; do
   if ! command -v "$cmd" >/dev/null 2>&1; then
     printf 'Error: missing required command: %s\n' "$cmd" >&2
     exit 1
   fi
 done
 
+if command -v mise >/dev/null 2>&1; then
+  MISE_BIN="$(command -v mise)"
+elif [[ -x "$HOME/.local/bin/mise" ]]; then
+  MISE_BIN="$HOME/.local/bin/mise"
+else
+  printf 'Error: missing required command: mise\n' >&2
+  exit 1
+fi
+
 SHELL_NAME="${SHELL##*/}"
 case "$SHELL_NAME" in
   fish)
-    MISE_ACTIVATE='mise activate fish | source'
+    MISE_ACTIVATE="$MISE_BIN activate fish | source"
     ;;
   bash)
-    MISE_ACTIVATE='eval "$(mise activate bash)"'
+    MISE_ACTIVATE="eval \"\$($MISE_BIN activate bash)\""
     ;;
   zsh)
-    MISE_ACTIVATE='eval "$(mise activate zsh)"'
+    MISE_ACTIVATE="eval \"\$($MISE_BIN activate zsh)\""
     ;;
   *)
     printf 'Error: unsupported shell for mise activation: %s\n' "$SHELL_NAME" >&2
