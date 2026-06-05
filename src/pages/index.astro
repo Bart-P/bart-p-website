@@ -1,21 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import NavBar from "../components/site/NavBar.astro";
+import Hero from "../components/home/Hero.astro";
+import Problem from "../components/home/Problem.astro";
 ---
 
 <BaseLayout
   title="Astro Landing Page Starter"
   description="A clean Astro and Tailwind starter for a static landing page."
 >
-  <section class="space-y-6">
-    <p class="text-sm font-semibold tracking-wide text-slate-500 uppercase">
-      Starter
-    </p>
-    <h1 class="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
-      Astro Landing Page Starter
-    </h1>
-    <p class="max-w-2xl text-lg text-slate-700">
-      Replace this page with project-specific content, sections, assets, and SEO
-      metadata.
-    </p>
-  </section>
+  <NavBar />
+  <div class="mx-auto max-w-6xl space-y-18 p-6">
+    <Hero />
+    <Problem />
+  </div>
 </BaseLayout>
