@@ -1,0 +1,189 @@
+# Homepage Detailed Structure
+
+## 1. Hero
+
+**Headline:**  
+From prompt chaos to reliable internal tools.
+
+**Subheadline:**  
+I help e-commerce teams and agencies turn messy AI workflows, spreadsheets, and fragile automations into software their team can actually use.
+
+**CTA:**  
+Book a call
+
+**Trust line:**  
+10+ years in e-commerce, 4+ years in agency operations, 3+ years building internal tools.
+
+---
+
+## 2. Problem Section
+
+### The Problem
+
+**Your AI workflow works. Until it becomes part of the business.**
+
+Most teams do not start with broken systems.
+
+They start with something simple: a useful prompt, a spreadsheet, a custom GPT, or an n8n/Make/Zapier automation.
+
+But once the same workflow is used every week, the cracks show:
+
+- prompts get copied and edited by hand
+- product data lives in different files
+- outputs are not saved in a clean structure
+- spreadsheets become unofficial internal software
+- automations fail silently
+- nobody knows which version was used
+- the process depends on one person remembering how it works
+
+Using the same prompt every week and changing it by hand is like writing invoices in Word.
+
+It works. But it is not a system.
+
+---
+
+## 3. How Messy Workflows Become Internal Tools
+
+**Purpose:**  
+Show the concrete transformation from fragile manual work to reliable software.
+
+**Items:**
+
+- _Prompt chaos → guided workflow_
+  Instead of copying prompts from documents and changing product data by hand, the process gets fixed inputs, saved context, and repeatable steps.
+
+- _Spreadsheet-as-software → database-backed tool_
+  Instead of using spreadsheets as a half-broken internal system, the workflow gets proper data, statuses, filters, history, and cleaner ownership.
+
+- _Fragile automation → controlled system_
+  Instead of silent n8n/Make/Zapier failures, the process gets logging, error visibility, retry options, and manual control where needed.
+
+- _AI prototype → usable software_
+  Instead of relying on a quick AI-built prototype nobody wants to maintain, the useful parts get cleaned up, structured, and turned into software a team can actually use.
+
+---
+
+## 4. Offers
+
+**Purpose:**  
+Show clear ways to start.
+
+### AI Workflow / Automation Audit
+
+**Price:**  
+€500–€1,500
+
+**Description:**  
+Review your prompts, GPTs, automations, spreadsheets, and prototypes. Identify what is fragile, what should stay manual, and what should become software.
+
+### Stabilization Sprint
+
+**Price:**  
+€2,500–€7,500
+
+**Description:**  
+Turn one messy workflow into a reliable internal tool or stabilized automation.
+
+### Full Internal Tool Build
+
+**Price:**  
+€7,500–€20,000+
+
+**Description:**  
+Build a proper internal app for workflows that are already business-critical.
+
+### Simple Website Without WordPress
+
+**Price:**  
+€1,500–€3,500
+
+**Description:**  
+Secondary offer. Simple static business websites without plugin maintenance.
+
+**Note:**  
+This offer should be visually smaller or secondary compared to the internal tools / workflow offers.
+
+---
+
+## 5. Selected Work Preview
+
+**Purpose:**  
+Show proof quickly and link to `/projects`.
+
+**Items:**
+
+- Listegy
+- Expensior
+- Logistics Website
+
+**Short background line:**  
+10+ years in e-commerce, agency operations, and practical business workflows.
+
+**CTA:**  
+See selected work
+
+---
+
+## 6. How The Audit Works
+
+**Purpose:**  
+Make the entry offer concrete.
+
+**Steps:**
+
+1. You show me your current workflow.
+2. I review prompts, automations, spreadsheets, GPTs, and prototypes.
+3. I map fragile points and hidden manual work.
+4. We decide what should stay manual, stay automated, or become software.
+5. You get a practical recommendation and fixed-price next-step quote.
+
+---
+
+## 7. Who This Is For / Not For
+
+**Good fit:**
+
+- e-commerce teams
+- Amazon sellers
+- agencies serving e-commerce clients
+- small companies with repeated AI/manual workflows
+- teams already using AI but lacking structure
+- businesses where spreadsheets or automations became business-critical
+
+**Not a fit:**
+
+- generic AI trend consulting
+- enterprise transformation programs
+- teams that only want more prompts, not better systems
+
+---
+
+## 8. FAQ
+
+**Purpose:**  
+Handle common questions without bloating the page.
+
+**Questions:**
+
+- Can you work with our existing prompts and automations?
+- Do we need to replace n8n, Make, or Zapier?
+- Can we start with one workflow?
+- Do you only work with e-commerce companies?
+- Which stack do you use?
+- What happens after I book a call?
+
+**Rule:**  
+Keep answers short.
+
+---
+
+## 9. Final CTA
+
+**Headline:**  
+Ready to turn a fragile workflow into a reliable internal tool?
+
+**Subline:**  
+Bring one messy workflow. I will help you decide whether it should stay manual, stay automated, or become software.
+
+**CTA:**  
+Book a call

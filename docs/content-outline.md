@@ -1,91 +1,218 @@
-# Landing Page Outline
+# Personal Freelance Website Sitemap
 
-## Copy Structure Rule
+## V1 Rule
 
-- Keep English and German copy side-by-side at section level.
-- Do not over-engineer i18n in planning phase.
-- Prioritize easy implementation and fast iteration.
+Required pages for launch:
 
-## 1. Hero
+- Home
+- Projects
+- Contact
+- Impressum
+- Datenschutz
 
-- Headline: From prompt chaos to reliable internal tools.
-- Subheadline: I build reliable internal software from messy AI workflows, prompt libraries, and fragile automations.
-- Primary CTA: Book a call
-- CTA destination: Google Calendar link
-- Trust line: practical e-commerce and operations background
+Everything else can come later.
 
-## 2. Problem and Friction
+## Goal
 
-- Reused prompts edited manually each week
-- Copy-paste AI output across multiple tools
-- Prompt libraries without workflow governance
-- Silent automation failures
-- Spreadsheets acting as internal software
-- Key analogy about invoices in Word
+Build a simple sales-focused personal website that supports LinkedIn outreach.
 
-## 3. What I Build
+Main goal:
 
-- Structured input forms
-- Database-backed workflows
-- Dashboards and activity history
-- Repeatable prompt workflows
-- Logging and manual controls
-- User-friendly UI for non-technical teams
+Visitors should quickly understand:
 
-## 4. Offer Ladder
+- what I do
+- who I help
+- what problem I solve
+- what proof I have
+- how to book a call
 
-- AI Workflow / Automation Audit (`EUR500-EUR1,500`)
-- Stabilization Sprint (`EUR2,500-EUR7,500`)
-- Full Internal Tool Build (`EUR7,500-EUR20,000+`)
-- Simple Website Without WordPress (`EUR1,500-EUR3,500`, secondary)
+Do not overbuild.  
+No blog for V1.  
+No separate About page for V1.  
+No CMS.  
+No WordPress.
 
-## 5. Selected Work / Proof
+---
 
-- Listegy: AI-assisted Amazon listing workflow turned into structured software
-- Expensior: internal expense workflow dashboard replacing spreadsheet-heavy process
-- Logistics Website: clean static business site without WordPress/plugin overhead
-- Background block: years of e-commerce and operations experience
+# Pages
 
-## 6. How The Audit Works
+## 1. Home
 
-- Review current prompts, GPTs, automations, sheets, and prototypes
-- Map fragile points and hidden manual work
-- Decide what stays manual, automated, or rebuilt as software
-- Deliver rough architecture and implementation recommendation
-- Deliver fixed-price quote for next step
+URL: /
 
-## 7. Who This Is For
+Purpose:
 
-- Small e-commerce teams
-- Amazon sellers with repeated content/ops workflows
-- Operations-heavy companies with tool sprawl
-- Teams already using AI but lacking reliability
+Main sales page.
 
-## 8. Who This Is Not For
+The homepage should explain the offer, show the problem, explain what I build, show proof, and push visitors toward booking a call.
 
-- Generic AI trend consulting
-- Massive enterprise transformation programs
-- Teams that only want more prompts and no system change
+Sections:
 
-## 9. FAQ
+1. Hero
+2. Problem
+3. What I Build
+4. Offers
+5. Selected Work Preview
+6. How The Audit Works
+7. Who This Is For / Not For
+8. FAQ
+9. Final CTA
 
-- Can you work with our existing prompts and automations?
-- Do we need to replace n8n/Make/Zapier?
-- Can we start with one workflow?
-- Do you only work with e-commerce companies?
-- Which stack do you use for internal tools?
-- What happens after I book a call?
+Primary CTA:
 
-## 10. Final CTA
+Book a call
 
-- Restate promise and best-fit client profile
-- Repeat `Book a call`
-- Keep booking friction low (single clear action)
+Secondary CTA:
 
-## Proof Item Format Template
+See selected work
+
+---
+
+## 2. Projects
+
+URL: /projects
+
+Purpose:
+
+Show proof without bloating the homepage.
+
+Projects to include:
+
+- Listegy
+- Expensior
+- Logistics Website
+- Personalized Video Page System, later if built
+
+Project format:
 
 - Screenshot
 - One-sentence problem
 - One-sentence solution
-- One-sentence proof statement
-- Tech stack (optional, short)
+- What I built
+- What it proves
+- Tech stack, short and optional
+
+Example project structure:
+
+### Listegy
+
+Problem:
+Amazon listing work often involves scattered product data, personas, keywords, prompts, and manual copy-paste.
+
+Solution:
+Listegy turns parts of that process into a structured AI-assisted workflow.
+
+What it proves:
+AI workflow thinking, e-commerce understanding, and turning prompt workflows into usable software.
+
+Tech stack:
+Laravel, Vue, Inertia, Tailwind, AI-assisted workflows
+
+---
+
+## 3. Contact
+
+URL: /contact
+
+Purpose:
+
+Make it easy to start a conversation.
+
+Content:
+
+- short intro text
+- Google Calendar booking link
+- email address
+- LinkedIn link
+- optional note about what to bring to the call
+
+Suggested text:
+
+Bring one messy workflow. I will help you decide whether it should stay manual, stay automated, or become software.
+
+Primary CTA:
+
+Book a call
+
+Secondary CTA:
+
+Send an email
+
+No contact form for V1 unless absolutely necessary.
+
+---
+
+## 4. Impressum
+
+URL: /impressum
+
+---
+
+## 5. Datenschutz
+
+URL: /datenschutz
+
+---
+
+# Later Pages / Routes
+
+## 6. Personalized Video Pages
+
+URL: /v/[slug]
+
+Purpose:
+
+Personalized outreach video pages.
+
+Not needed for first website version.
+
+Content:
+
+- prospect name/company
+- embedded video
+- short message
+- Google Calendar CTA
+- link to main website
+
+Tech:
+
+- static page
+- JSON data
+- YouTube unlisted or Loom video
+- no database in V1
+
+# Main Navigation
+
+Recommended V1 navigation:
+
+- Home
+- Projects
+- Contact
+
+Footer links:
+
+- Impressum
+- Datenschutz
+- LinkedIn
+- Email
+
+---
+
+# Implementation Notes
+
+Stack:
+
+- Astro
+- Tailwind
+- static output
+- English and German pages
+- no backend
+- no CMS
+- no contact form for V1
+
+Language structure:
+
+/ = English
+/de/ = German
+
+Do not over-engineer i18n. Duplicate pages if needed.
