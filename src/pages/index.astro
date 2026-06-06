@@ -4,16 +4,24 @@ import NavBar from "../components/site/NavBar.astro";
 import Hero from "../components/home/Hero.astro";
 import Problem from "../components/home/Problem.astro";
 import Solution from "../components/home/Solution.astro";
+import Offer from "../components/home/Offer.astro";
+import Proof from "../components/home/Proof.astro";
+import Faq from "../components/home/Faq.astro";
+import Cta from "../components/home/Cta.astro";
 ---
 
 <BaseLayout
-  title="Astro Landing Page Starter"
-  description="A clean Astro and Tailwind starter for a static landing page."
+    title="Astro Landing Page Starter"
+    description="A clean Astro and Tailwind starter for a static landing page."
 >
-  <NavBar />
-  <div class="mx-auto max-w-6xl space-y-18 p-6">
-    <Hero />
-    <Problem />
-    <Solution />
-  </div>
+    <NavBar />
+    <div class="mx-auto max-w-6xl space-y-18 p-6">
+        <Hero />
+        <Problem />
+        <Solution />
+        <Offer />
+        <Proof />
+        <Faq />
+        <Cta />
+    </div>
 </BaseLayout>
