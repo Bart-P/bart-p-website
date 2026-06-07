@@ -1,14 +1,16 @@
 ---
-import { siteConfig } from "../../config/site";
+import { commonContent } from "../../i18n/common";
+
+const nav = commonContent.en.nav;
 ---
 
 <nav class="bg-background text-text border-border w-full border-b">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <a href="/" class="text-lg font-semibold"> Bartek Para </a>
+        <a href="/" class="text-lg font-semibold"> {nav.brand} </a>
 
         <ul class="flex items-center gap-6">
             {
-                siteConfig.nav.map((item) => (
+                nav.links.map((item) => (
                     <li>
                         <a
                             href={item.href}
@@ -20,16 +22,15 @@ import { siteConfig } from "../../config/site";
                 ))
             }
             <li>
-                <span class="font-bold">EN</span> | <span class="text-muted"
-                    >DE</span
-                >
+                <span class="font-bold">{nav.languageSwitch.current}</span> |
+                <span class="text-muted">{nav.languageSwitch.other}</span>
             </li>
             <li>
                 <a
-                    href="/"
-                    class="text-background bg-primary hover:bg-primary/80 hover:text-text/90 rounded px-3 py-2 text-lg font-semibold transition"
+                    href={nav.primaryCta.href}
+                    class="text-background bg-primary hover:bg-primary/80 hover:text-text/90 rounded-lg px-3 py-2 text-lg font-semibold transition"
                 >
-                    Book a call
+                    {nav.primaryCta.label}
                 </a>
             </li>
         </ul>

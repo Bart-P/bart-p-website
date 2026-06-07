@@ -1,18 +1,23 @@
 ---
+import { commonContent } from "../../i18n/common";
 
+const footer = commonContent.en.footer;
 ---
 
 <footer class="border-border flex items-center justify-between border-t p-6">
     <div>
-        <p class="font-bold">Bartek Para</p>
-        <p>Internal tools for e-commerce teams and agencies.</p>
+        <p class="font-bold">{footer.brand}</p>
+        <p>{footer.tagline}</p>
     </div>
     <ul class="flex gap-6">
-        <li><a class="cursor-pointer" href="/">Home</a></li>
-        <li><a class="cursor-pointer" href="/">Projects</a></li>
-        <li><a class="cursor-pointer" href="/">Contact</a></li>
-        <li><a class="cursor-pointer" href="/">Impressum</a></li>
-        <li><a class="cursor-pointer" href="/">Datenschutz</a></li>
-        <li><a class="cursor-pointer" href="/">LinkedIn</a></li>
+        {
+            footer.links.map((item) => (
+                <li>
+                    <a class="cursor-pointer" href={item.href}>
+                        {item.label}
+                    </a>
+                </li>
+            ))
+        }
     </ul>
 </footer>
