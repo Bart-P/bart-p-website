@@ -3,16 +3,16 @@
 ## 1. Hero
 
 **Headline:**  
-From prompt chaos to reliable internal tools.
+AI-assisted internal tools for e-commerce teams.
 
 **Subheadline:**  
-I help e-commerce teams and agencies turn messy AI workflows, spreadsheets, and fragile automations into software their team can actually use.
+I help e-commerce teams and agencies turn prompt chaos, spreadsheets, and fragile automations into reliable software their team can actually use.
 
 **CTA:**  
 Book a call
 
 **Trust line:**  
-10+ years in e-commerce, 4+ years in agency operations, 3+ years building internal tools.
+10+ years in e-commerce and operations, plus 3+ years of hands-on software development.
 
 ---
 
@@ -20,18 +20,18 @@ Book a call
 
 ### The Problem
 
-**Your AI workflow works. Until it becomes part of the business.**
+**AI workflows are useful. Until the team depends on them.**
 
-Most teams do not start with broken systems.
+Most teams do not start by building software.
 
 They start with something simple: a useful prompt, a spreadsheet, a custom GPT, or an n8n/Make/Zapier automation.
 
-But once the same workflow is used every week, the cracks show:
+But once the workflow becomes part of daily work, the cracks show:
 
 - prompts get copied and edited by hand
 - product data lives in different files
 - outputs are not saved in a clean structure
-- spreadsheets become unofficial internal software
+- spreadsheets acting like internal tools
 - automations fail silently
 - nobody knows which version was used
 - the process depends on one person remembering how it works
@@ -52,14 +52,14 @@ Show the concrete transformation from fragile manual work to reliable software.
 - _Prompt chaos → guided workflow_
   Instead of copying prompts from documents and changing product data by hand, the process gets fixed inputs, saved context, and repeatable steps.
 
-- _Spreadsheet-as-software → database-backed tool_
+- _Spreadsheet workflow → database-backed tool_
   Instead of using spreadsheets as a half-broken internal system, the workflow gets proper data, statuses, filters, history, and cleaner ownership.
 
 - _Fragile automation → controlled system_
   Instead of silent n8n/Make/Zapier failures, the process gets logging, error visibility, retry options, and manual control where needed.
 
 - _AI prototype → usable software_
-  Instead of relying on a quick AI-built prototype nobody wants to maintain, the useful parts get cleaned up, structured, and turned into software a team can actually use.
+  Instead of relying on a quick AI-built prototype nobody wants to maintain, the useful parts get cleaned up, structured, and turned into software your team can actually use.
 
 ---
 
@@ -74,7 +74,7 @@ Show clear ways to start.
 €500–€1,500
 
 **Description:**  
-Review your prompts, GPTs, automations, spreadsheets, and prototypes. Identify what is fragile, what should stay manual, and what should become software.
+Review your prompts, GPTs, automations, spreadsheets, and prototypes. Identify what is fragile, what should stay manual, what should be stabilized, and what should become an internal tool.
 
 ### Stabilization Sprint
 
@@ -84,13 +84,13 @@ Review your prompts, GPTs, automations, spreadsheets, and prototypes. Identify w
 **Description:**  
 Turn one messy workflow into a reliable internal tool or stabilized automation.
 
-### Full Internal Tool Build
+### AI-Assisted Internal Tool Build
 
 **Price:**  
 €7,500–€20,000+
 
 **Description:**  
-Build a proper internal app for workflows that are already business-critical.
+Build a focused internal tool around an AI-assisted or operations workflow that is already business-critical.
 
 ### Simple Website Without WordPress
 
@@ -117,7 +117,7 @@ Show proof quickly and link to `/projects`.
 - Logistics Website
 
 **Short background line:**  
-10+ years in e-commerce, agency operations, and practical business workflows.
+10+ years in e-commerce and operations, plus 3+ years of hands-on software development.
 
 **CTA:**  
 See selected work
@@ -134,7 +134,7 @@ Make the entry offer concrete.
 1. You show me your current workflow.
 2. I review prompts, automations, spreadsheets, GPTs, and prototypes.
 3. I map fragile points and hidden manual work.
-4. We decide what should stay manual, stay automated, or become software.
+4. We decide what should stay manual, be stabilized, or become an internal tool.
 5. You get a practical recommendation and fixed-price next-step quote.
 
 ---
@@ -180,10 +180,10 @@ Keep answers short.
 ## 9. Final CTA
 
 **Headline:**  
-Ready to turn a fragile workflow into a reliable internal tool?
+Ready to build an internal tool your team can actually use?
 
 **Subline:**  
-Bring one messy workflow. I will help you decide whether it should stay manual, stay automated, or become software.
+Bring one messy workflow. I’ll help you decide whether it should stay manual, be stabilized, or become an internal tool.
 
 **CTA:**  
 Book a call
@@ -197,7 +197,7 @@ Most of the time, the first step is to take the useful parts that already exist 
 
 Instead of copying prompts from documents and changing product data by hand, the process gets fixed inputs, saved context, and repeatable steps.
 
-**Spreadsheet-as-software → database-backed tool**
+**Spreadsheet workflow → database-backed tool**
 
 Instead of using spreadsheets as a half-broken internal system, the workflow gets proper data, statuses, filters, history, and cleaner ownership.
 
@@ -207,4 +207,4 @@ Instead of silent n8n, Make, or Zapier failures, the process gets logging, error
 
 **AI prototype → usable software**
 
-Instead of relying on a quick AI-built prototype nobody wants to maintain, the useful parts get cleaned up, structured, and turned into software a team can actually use.
+Instead of relying on a quick AI-built prototype nobody wants to maintain, the useful parts get cleaned up, structured, and turned into software your team can actually use.
