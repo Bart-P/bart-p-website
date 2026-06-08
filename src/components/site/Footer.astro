@@ -14,12 +14,14 @@ const { content: footer } = Astro.props as Props;
 ---
 
 <footer class="border-border border-t">
-    <div class="max-w-6xl p-6 flex items-center justify-between mx-auto">
+    <div
+        class="mx-auto flex max-w-6xl flex-col flex-nowrap items-center justify-between p-6 md:flex-row space-y-3"
+    >
         <div>
             <p class="font-bold">{footer.brand}</p>
             <p>{footer.tagline}</p>
         </div>
-        <ul class="flex gap-6">
+        <ul class="flex flex-wrap gap-6 space-y-3">
             {
                 footer.links.map((item) => (
                     <li>

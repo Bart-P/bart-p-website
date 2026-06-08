@@ -11,6 +11,7 @@ interface Props {
         languageSwitch: {
             current: string;
             other: string;
+            href: string;
         };
         primaryCta: {
             label: string;
@@ -20,11 +21,14 @@ interface Props {
 }
 
 const { content: nav } = Astro.props as Props;
+const homeHref = nav.links[0]?.href ?? "/";
 ---
 
-<nav class="bg-background text-text border-border w-full border-b shadow">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <a href="/" class="text-lg font-semibold"> {nav.brand} </a>
+<nav class="bg-background text-text border-border min-w-screen border-b shadow">
+    <div
+        class="mx-auto max-w-max items-center justify-between space-y-3 px-6 py-3 text-center md:flex md:max-w-6xl"
+    >
+        <a href={homeHref} class="text-lg font-semibold"> {nav.brand} </a>
 
         <ul class="flex items-center gap-6">
             {
@@ -42,14 +46,13 @@ const { content: nav } = Astro.props as Props;
 
             <li>
                 <span class="font-bold">{nav.languageSwitch.current}</span> |
-                <span class="text-muted">{nav.languageSwitch.other}</span>
-            </li>
-
-            <li>
-                <ButtonLink href={nav.primaryCta.href} variant="primary">
-                    {nav.primaryCta.label}
-                </ButtonLink>
+                <a class="text-muted" href={nav.languageSwitch.href}>
+                    {nav.languageSwitch.other}
+                </a>
             </li>
         </ul>
+        <ButtonLink href={nav.primaryCta.href} variant="primary">
+            {nav.primaryCta.label}
+        </ButtonLink>
     </div>
 </nav>

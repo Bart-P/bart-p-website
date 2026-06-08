@@ -25,7 +25,7 @@ const { content } = Astro.props as Props;
     title={content.title}
     intro={content.intro}
   />
-  <div class="grid grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
     {
       content.transformations.map((item) => (
         <Card class="space-y-6">

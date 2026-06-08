@@ -18,9 +18,11 @@ interface Props {
             secondaryCta: string;
         };
     };
+    primaryCtaHref: string;
+    secondaryCtaHref: string;
 }
 
-const { content } = Astro.props as Props;
+const { content, primaryCtaHref, secondaryCtaHref } = Astro.props as Props;
 ---
 
 <div class="space-y-6">
@@ -29,7 +31,7 @@ const { content } = Astro.props as Props;
         title={content.title}
         intro={content.intro}
     />
-    <div class="flex gap-3">
+    <div class="flex gap-3 flex-wrap md:flex-nowrap">
         <div class="flex-2/3 space-y-3 p-3">
             {
                 content.projects.map((project, index) => (
@@ -44,16 +46,16 @@ const { content } = Astro.props as Props;
                 ))
             }
         </div>
-        <div class="border-border flex-1/3 space-y-3 border-l p-6">
+        <div class="border-border flex-1/3 space-y-3 border-t md:border-l md:border-t-0 p-6">
             <h4 class="font-bold">{content.sidebar.title}</h4>
             <p class="whitespace-pre-line">{content.sidebar.body}</p>
 
             <div class="space-x-3 space-y-3">
-                <ButtonLink href="/" variant="primary">
+                <ButtonLink href={primaryCtaHref} variant="primary">
                     {content.sidebar.primaryCta}
                 </ButtonLink>
 
-                <ButtonLink href="/projects" variant="secondary">
+                <ButtonLink href={secondaryCtaHref} variant="secondary">
                     {content.sidebar.secondaryCta}
                 </ButtonLink>
             </div>

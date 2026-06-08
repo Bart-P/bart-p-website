@@ -32,7 +32,7 @@ const { content } = Astro.props as Props;
         title={content.title}
         intro={content.intro}
     />
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {
             content.cards.map((card, index) => (
                 <Card

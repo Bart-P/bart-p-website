@@ -2,45 +2,47 @@
 import ButtonLink from "../ui/ButtonLink.astro";
 
 interface Props {
-  content: {
-    title: string;
-    intro: string;
-    primaryCta: string;
-    secondaryCta: string;
-    proof: string;
-    image: {
-      src: string;
+    content: {
+        title: string;
+        intro: string;
+        primaryCta: string;
+        secondaryCta: string;
+        proof: string;
+        image: {
+            src: string;
+        };
     };
-  };
+    primaryCtaHref: string;
+    secondaryCtaHref: string;
 }
 
-const { content } = Astro.props as Props;
+const { content, primaryCtaHref, secondaryCtaHref } = Astro.props as Props;
 ---
 
-<div class="flex">
-  <div class="my-auto flex-1/2 space-y-8 pr-4">
-    <h1 class="text-text text-4xl leading-tight font-bold">
-      {content.title}
-    </h1>
-    <p class="text-xl">
-      {content.intro}
-    </p>
-    <div class="space-x-3">
-      <ButtonLink href="/" variant="primary">
-        {content.primaryCta}
-      </ButtonLink>
+<div class="flex flex-wrap md:flex-nowrap">
+    <div class="my-auto flex-1/2 space-y-8 pr-4 min-w-[430px]">
+        <h1 class="text-text text-4xl leading-tight font-bold">
+            {content.title}
+        </h1>
+        <p class="text-xl">
+            {content.intro}
+        </p>
+        <div class="space-y-3 space-x-3">
+            <ButtonLink href={primaryCtaHref} variant="primary">
+                {content.primaryCta}
+            </ButtonLink>
 
-      <ButtonLink href="/projects" variant="secondary">
-        {content.secondaryCta}
-      </ButtonLink>
+            <ButtonLink href={secondaryCtaHref} variant="secondary">
+                {content.secondaryCta}
+            </ButtonLink>
+        </div>
+        <p class="text-muted">
+            {content.proof}
+        </p>
     </div>
-    <p class="text-muted">
-      {content.proof}
-    </p>
-  </div>
-  <div class="flex-1/2">
-    <div class="flex w-full justify-items-end pl-10">
-      <img src={content.image.src} />
+    <div class="flex flex-1/2 items-center justify-center">
+        <div class="md:ml-auto md:pl-10">
+            <img src={content.image.src} />
+        </div>
     </div>
-  </div>
 </div>
