@@ -216,4 +216,221 @@ export const homeContent = {
             primaryCta: "Book a call",
         },
     },
+    de: {
+        meta: {
+            title: "KI-gestützte interne Tools für E-Commerce-Teams",
+            description:
+                "Ich helfe E-Commerce-Teams und Agenturen, unstrukturierte KI-Workflows, Tabellen und anfällige Automatisierungen in verlässliche interne Tools zu verwandeln, die das Team wirklich nutzen kann.",
+        },
+        hero: {
+            title: "KI-gestützte interne Tools für E-Commerce-Teams.",
+            intro:
+                "Ich helfe E-Commerce-Teams und Agenturen, Prompt-Chaos, Tabellen und anfällige Automatisierungen in verlässliche Software zu verwandeln, die das Team wirklich nutzen kann.",
+            primaryCta: "Gespräch buchen",
+            secondaryCta: "Ausgewählte Projekte ansehen",
+            proof: "10+ Jahre in E-Commerce und Operations plus 3+ Jahre praktische Softwareentwicklung.",
+            image: {
+                src: "/assets/hero_image.png",
+            },
+        },
+        problem: {
+            sectionLabel: "Das Problem",
+            title: "KI-Workflows sind nützlich. Bis das Team davon abhängt.",
+            intro:
+                "Die meisten Teams starten nicht mit Software. Sie starten mit etwas Einfachem: einem guten Prompt, einer Tabelle, einem Custom GPT oder einer n8n/Make/Zapier-Automatisierung.",
+            quote:
+                "Jede Woche denselben Prompt zu kopieren und von Hand anzupassen, ist wie Rechnungen in Word zu schreiben.\nEs funktioniert. Aber es ist kein System.",
+            listTitle: "Sobald der Workflow Teil des Alltags wird, zeigen sich die Schwachstellen:",
+            painPoints: [
+                "Prompts werden kopiert und von Hand bearbeitet",
+                "Produktdaten sind über Dateien verteilt",
+                "Ergebnisse werden nicht sauber gespeichert",
+                "Tabellen werden zu inoffiziellen internen Tools",
+                "Automatisierungen fallen still aus",
+                "Keine klare Versionshistorie",
+                "Eine Person weiß, wie es funktioniert",
+            ],
+        },
+        solution: {
+            sectionLabel: "Die Lösung",
+            title: "Wie aus unstrukturierten Workflows interne Tools werden",
+            intro:
+                "Die meisten anfälligen Workflows brauchen nicht sofort einen kompletten Neuaufbau. Der erste Schritt ist, das, was schon funktioniert, zu strukturieren.",
+            transformations: [
+                {
+                    from: "Prompt-Chaos",
+                    to: "geführter Workflow",
+                    description:
+                        "Statt Prompts aus Dokumenten zu kopieren und Produktdaten per Hand zu ändern, bekommt der Prozess feste Inputs, gespeicherten Kontext und wiederholbare Schritte.",
+                },
+                {
+                    from: "Tabellen-Workflow",
+                    to: "datenbankbasiertes Tool",
+                    description:
+                        "Statt Tabellen als improvisiertes internes System zu nutzen, bekommt der Workflow saubere Daten, Status, Filter, Historie und klarere Verantwortung.",
+                },
+                {
+                    from: "Anfällige Automatisierung",
+                    to: "kontrolliertes System",
+                    description:
+                        "Statt stillen Ausfällen in n8n, Make oder Zapier bekommt der Prozess Logging, sichtbare Fehler, Retry-Optionen und manuelle Kontrolle, wo sie nötig ist.",
+                },
+                {
+                    from: "KI-Prototyp",
+                    to: "nutzbare Software",
+                    description:
+                        "Statt sich auf einen schnellen KI-Prototypen zu verlassen, den niemand dauerhaft pflegen möchte, werden die nützlichen Teile aufgeräumt, strukturiert und zu Software, die dein Team wirklich nutzen kann.",
+                },
+            ],
+        },
+        offers: {
+            sectionLabel: "Angebote",
+            title: "So können wir zusammenarbeiten",
+            intro:
+                "Starte mit einem kompakten Audit, stabilisiere einen Workflow oder baue ein KI-gestütztes internes Tool, wenn der Prozess bereits geschäftskritisch ist.",
+            cards: [
+                {
+                    title: "KI-Workflow-/Automatisierungs-Audit",
+                    price: "€500–€1,500",
+                    description:
+                        "Finde heraus, wo dein aktueller KI-Workflow, deine Automatisierung, Tabelle oder dein Prototyp anfällig ist.",
+                    bestForTitle: "Ideal für",
+                    bestFor: [
+                        "Unstrukturierte Prompt-Workflows",
+                        "Anfällige n8n-/Make-/Zapier-Flows",
+                        "Tabellenlastige Prozesse",
+                    ],
+                    resultTitle: "Ergebnis",
+                    result:
+                        "Klarer nächster Schritt: manuell lassen, stabilisieren oder in Software überführen.",
+                },
+                {
+                    title: "Stabilisierungs-Sprint",
+                    price: "€2,500–€7,500",
+                    description:
+                        "Stabilisiere einen wiederkehrenden Workflow, der zu anfällig, zu manuell oder zu schwer steuerbar wird.",
+                    bestForTitle: "Ideal für",
+                    bestFor: [
+                        "Wiederkehrende Geschäftsprozesse",
+                        "Defekte oder instabile Automatisierung",
+                        "KI-Workflow mit Strukturbedarf",
+                    ],
+                    resultTitle: "Ergebnis",
+                    result:
+                        "Ein Prozess wird robuster und weniger abhängig von Copy-paste.",
+                },
+                {
+                    title: "KI-gestütztes internes Tool",
+                    price: "€7,500–€20,000+",
+                    description:
+                        "Baue ein fokussiertes internes Tool rund um einen KI-gestützten oder operativen Workflow, der bereits geschäftskritisch ist.",
+                    bestForTitle: "Ideal für",
+                    bestFor: [
+                        "Wiederkehrende E-Commerce-Workflows",
+                        "Interne Operations-Tools",
+                        "Vom Team genutzte Prozesse",
+                    ],
+                    resultTitle: "Ergebnis",
+                    result:
+                        "Ein verlässliches internes Tool, gebaut rund um eure echte Arbeitsweise.",
+                },
+            ],
+            websiteOffer: {
+                title: "Einfache Website ohne WordPress",
+                price: "€1,500–€3,500",
+                description:
+                    "Eine saubere, schnelle Business-Website ohne WordPress, Plugin-Updates oder unnötige Backend-Komplexität.",
+                bestForTitle: "Ideal für",
+                bestFor: [
+                    "Websites für kleine Unternehmen",
+                    "Service-Seiten",
+                    "Landingpages",
+                ],
+                resultTitle: "Ergebnis",
+                result:
+                    "Eine einfache statische Website, leicht zu pflegen und ohne ständige Plugin-Updates.",
+            },
+        },
+        proof: {
+            sectionLabel: "Projekte",
+            title: "Ausgewählte Arbeiten",
+            intro: "Einige Beispiele für die Art von Systemen, die ich baue:",
+            projects: [
+                {
+                    name: "Listegy",
+                    description:
+                        "KI-gestützter E-Commerce-Listing-Workflow als strukturierte Software umgesetzt.",
+                },
+                {
+                    name: "Expensior",
+                    description:
+                        "Interner Ausgaben- und Zahlungs-Workflow statt tabellenlastigem Tracking.",
+                },
+                {
+                    name: "Logistics Website",
+                    description:
+                        "Saubere statische Business-Website ohne WordPress- und Plugin-Overhead.",
+                },
+            ],
+            sidebar: {
+                title: "Du hast einen Workflow, der ein internes Tool werden sollte?",
+                body:
+                    "Oder brauchst du eine einfache Website ohne WordPress-Overhead?\nBring das Problem mit. Ich helfe dir zu entscheiden, ob es manuell bleiben, stabilisiert oder zu Software werden sollte.",
+                primaryCta: "Gespräch buchen",
+                secondaryCta: "Ausgewählte Projekte ansehen",
+            },
+        },
+        faq: {
+            sectionLabel: "FAQ",
+            title: "Häufige Fragen",
+            items: [
+                {
+                    question: "Mit wem arbeitest du?",
+                    answer:
+                        "Ich arbeite vor allem mit E-Commerce-Teams, Amazon-Sellern, Agenturen und kleinen Unternehmen, die bereits KI-Workflows, Tabellen, Automatisierungen oder interne Tools nutzen, aber ein verlässlicheres System brauchen, das das Team wirklich nutzen kann.",
+                },
+                {
+                    question: "Bei welchen Workflows hilfst du?",
+                    answer:
+                        "Bei wiederkehrenden Workflows rund um Produktdaten, Listing-Content, Prompt-Bibliotheken, Tabellen, Operations, Reporting und interne Prozesse. Das Muster ist einfach: Der Workflow existiert bereits, braucht aber mehr Struktur, Stabilität oder ein richtiges internes Tool.",
+                },
+                {
+                    question: "Ersetzt du n8n, Make oder Zapier?",
+                    answer:
+                        "Nicht standardmäßig. Wenn eine Automatisierung gut funktioniert, sollte sie bleiben. Ich empfehle nur dann, Teile als Software neu zu bauen, wenn der Workflow zu wichtig, zu anfällig oder zu schwer steuerbar wird.",
+                },
+                {
+                    question: "Können wir mit einem Workflow starten?",
+                    answer:
+                        "Ja. Das ist meist der beste Start. Ein Workflow lässt sich einfacher verstehen, eingrenzen, stabilisieren und in einen klaren nächsten Schritt überführen.",
+                },
+                {
+                    question: "Arbeitest du nur mit E-Commerce-Unternehmen?",
+                    answer:
+                        "E-Commerce ist mein stärkster Hintergrund, aber ich helfe auch Agenturen und kleinen Unternehmen mit ähnlichen Workflow-Problemen.",
+                },
+                {
+                    question: "Was bietest du nicht an?",
+                    answer:
+                        "Ich biete keine generische KI-Trend-Beratung, keine Enterprise-Transformationsprogramme und keine reinen \"mehr Prompts\"-Lösungen an. Das Ziel sind praktische Systeme, nicht mehr Komplexität.",
+                },
+                {
+                    question: "Welchen Stack nutzt du?",
+                    answer:
+                        "Für interne Tools arbeite ich vor allem mit Laravel, Vue, Inertia, Tailwind, SQLite/MySQL, APIs und KI-gestützten Workflows. Für einfache statische Websites nutze ich Astro und Tailwind.",
+                },
+                {
+                    question: "Was passiert nach der Terminbuchung?",
+                    answer:
+                        "Du zeigst mir den Workflow oder das Projekt. Wir besprechen, was aktuell funktioniert, wo es bricht und welcher nächste Schritt am saubersten ist. Wenn es passt, schlage ich einen klaren nächsten Schritt vor: Audit, Sprint, Tool-Build oder einfache Website.",
+                },
+            ],
+        },
+        cta: {
+            title: "Bereit für ein internes Tool, das dein Team wirklich nutzt?",
+            body:
+                "Bring einen unstrukturierten Workflow mit. Ich helfe dir zu entscheiden, ob er manuell bleiben, stabilisiert oder zu verlässlicher Software werden sollte.",
+            primaryCta: "Gespräch buchen",
+        },
+    }
 } as const;
