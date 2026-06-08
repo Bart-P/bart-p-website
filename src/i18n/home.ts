@@ -62,7 +62,7 @@ export const homeContent = {
                     from: "AI prototype",
                     to: "usable software",
                     description:
-                        "Instead of relying on a quick AI-built prototype nobody wants to maintain, the useful parts get cleaned up, structured, and turned into software your team can actually use.",
+                        "Instead of relying on a quick AI-built prototype that nobody wants to maintain, the useful parts get cleaned up, structured, and turned into software your team can actually use.",
                 },
             ],
         },
@@ -220,12 +220,12 @@ export const homeContent = {
         meta: {
             title: "KI-gestützte interne Tools für E-Commerce-Teams",
             description:
-                "Ich helfe E-Commerce-Teams und Agenturen, unstrukturierte KI-Workflows, Tabellen und anfällige Automatisierungen in verlässliche interne Tools zu verwandeln, die das Team wirklich nutzen kann.",
+                "Ich helfe E-Commerce-Teams und Agenturen, unstrukturierte KI-Workflows, Tabellen und anfällige Automatisierungen in verlässliche interne Tools zu verwandeln, die im Alltag funktionieren.",
         },
         hero: {
             title: "KI-gestützte interne Tools für E-Commerce-Teams.",
             intro:
-                "Ich helfe E-Commerce-Teams und Agenturen, Prompt-Chaos, Tabellen und anfällige Automatisierungen in verlässliche Software zu verwandeln, die das Team wirklich nutzen kann.",
+                "Ich helfe E-Commerce-Teams und Agenturen, Prompt-Chaos, Tabellen und anfällige Automatisierungen in verlässliche Software zu verwandeln, die zu euren Abläufen passt.",
             primaryCta: "Gespräch buchen",
             secondaryCta: "Ausgewählte Projekte ansehen",
             proof: "10+ Jahre in E-Commerce und Operations plus 3+ Jahre praktische Softwareentwicklung.",
@@ -259,27 +259,27 @@ export const homeContent = {
             transformations: [
                 {
                     from: "Prompt-Chaos",
-                    to: "geführter Workflow",
+                    to: "Geführter Workflow",
                     description:
                         "Statt Prompts aus Dokumenten zu kopieren und Produktdaten per Hand zu ändern, bekommt der Prozess feste Inputs, gespeicherten Kontext und wiederholbare Schritte.",
                 },
                 {
-                    from: "Tabellen-Workflow",
-                    to: "datenbankbasiertes Tool",
+                    from: "Tabellen",
+                    to: "Datenbankbasiertes Tool",
                     description:
-                        "Statt Tabellen als improvisiertes internes System zu nutzen, bekommt der Workflow saubere Daten, Status, Filter, Historie und klarere Verantwortung.",
+                        "Statt Tabellen als improvisiertes internes System zu nutzen, bekommt der Workflow saubere Daten, Status, Filter, Historie und klare Verantwortung.",
                 },
                 {
-                    from: "Anfällige Automatisierung",
-                    to: "kontrolliertes System",
+                    from: "Automation",
+                    to: "Kontrolle",
                     description:
-                        "Statt stillen Ausfällen in n8n, Make oder Zapier bekommt der Prozess Logging, sichtbare Fehler, Retry-Optionen und manuelle Kontrolle, wo sie nötig ist.",
+                        "Statt stillen Ausfällen in n8n, Make oder Zapier bekommt der Prozess Logging, sichtbare Fehler, Retry-Optionen und manuelle Kontrolle.",
                 },
                 {
                     from: "KI-Prototyp",
-                    to: "nutzbare Software",
+                    to: "Nutzbare Software",
                     description:
-                        "Statt sich auf einen schnellen KI-Prototypen zu verlassen, den niemand dauerhaft pflegen möchte, werden die nützlichen Teile aufgeräumt, strukturiert und zu Software, die dein Team wirklich nutzen kann.",
+                        "Statt sich auf einen schnellen KI-Prototypen zu verlassen, werden die nützlichen Teile aufgeräumt, strukturiert und zu Software, die dein Team im Alltag unterstützt.",
                 },
             ],
         },
@@ -287,17 +287,17 @@ export const homeContent = {
             sectionLabel: "Angebote",
             title: "So können wir zusammenarbeiten",
             intro:
-                "Starte mit einem kompakten Audit, stabilisiere einen Workflow oder baue ein KI-gestütztes internes Tool, wenn der Prozess bereits geschäftskritisch ist.",
+                "Starte mit einem kompakten Audit, stabilisiere einen Workflow oder baue ein internes Tool, wenn der Prozess bereits geschäftskritisch ist.",
             cards: [
                 {
-                    title: "KI-Workflow-/Automatisierungs-Audit",
+                    title: "KI-Workflow-Audit",
                     price: "€500–€1,500",
                     description:
                         "Finde heraus, wo dein aktueller KI-Workflow, deine Automatisierung, Tabelle oder dein Prototyp anfällig ist.",
                     bestForTitle: "Ideal für",
                     bestFor: [
-                        "Unstrukturierte Prompt-Workflows",
-                        "Anfällige n8n-/Make-/Zapier-Flows",
+                        "Unstrukturierte Prompts",
+                        "Anfällige Automationen",
                         "Tabellenlastige Prozesse",
                     ],
                     resultTitle: "Ergebnis",
@@ -308,27 +308,27 @@ export const homeContent = {
                     title: "Stabilisierungs-Sprint",
                     price: "€2,500–€7,500",
                     description:
-                        "Stabilisiere einen wiederkehrenden Workflow, der zu anfällig, zu manuell oder zu schwer steuerbar wird.",
+                        "Stabilisiere einen wiederkehrenden Workflow, der zu anfällig, zu manuell oder schwer steuerbar wird.",
                     bestForTitle: "Ideal für",
                     bestFor: [
-                        "Wiederkehrende Geschäftsprozesse",
-                        "Defekte oder instabile Automatisierung",
-                        "KI-Workflow mit Strukturbedarf",
+                        "Wiederkehrende Prozesse",
+                        "Instabile Automationen",
+                        "KI-Workflows ohne Struktur",
                     ],
                     resultTitle: "Ergebnis",
                     result:
                         "Ein Prozess wird robuster und weniger abhängig von Copy-paste.",
                 },
                 {
-                    title: "KI-gestütztes internes Tool",
+                    title: "Interner Tool-Build",
                     price: "€7,500–€20,000+",
                     description:
-                        "Baue ein fokussiertes internes Tool rund um einen KI-gestützten oder operativen Workflow, der bereits geschäftskritisch ist.",
+                        "Baue ein fokussiertes internes Tool rund um einen KI-gestützten oder operativen Workflow.",
                     bestForTitle: "Ideal für",
                     bestFor: [
-                        "Wiederkehrende E-Commerce-Workflows",
+                        "E-Commerce-Workflows",
                         "Interne Operations-Tools",
-                        "Vom Team genutzte Prozesse",
+                        "Team-Prozesse",
                     ],
                     resultTitle: "Ergebnis",
                     result:
@@ -387,7 +387,7 @@ export const homeContent = {
                 {
                     question: "Mit wem arbeitest du?",
                     answer:
-                        "Ich arbeite vor allem mit E-Commerce-Teams, Amazon-Sellern, Agenturen und kleinen Unternehmen, die bereits KI-Workflows, Tabellen, Automatisierungen oder interne Tools nutzen, aber ein verlässlicheres System brauchen, das das Team wirklich nutzen kann.",
+                        "Ich arbeite vor allem mit E-Commerce-Teams, Amazon-Sellern, Agenturen und kleinen Unternehmen, die bereits KI-Workflows, Tabellen, Automatisierungen oder interne Tools nutzen, aber ein verlässlicheres System brauchen.",
                 },
                 {
                     question: "Bei welchen Workflows hilfst du?",
@@ -417,20 +417,20 @@ export const homeContent = {
                 {
                     question: "Welchen Stack nutzt du?",
                     answer:
-                        "Für interne Tools arbeite ich vor allem mit Laravel, Vue, Inertia, Tailwind, SQLite/MySQL, APIs und KI-gestützten Workflows. Für einfache statische Websites nutze ich Astro und Tailwind.",
+                        "Für interne Tools arbeite ich vor allem mit Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs und KI-gestützten Workflows. Für einfache statische Websites nutze ich Astro und Tailwind.",
                 },
                 {
                     question: "Was passiert nach der Terminbuchung?",
                     answer:
-                        "Du zeigst mir den Workflow oder das Projekt. Wir besprechen, was aktuell funktioniert, wo es bricht und welcher nächste Schritt am saubersten ist. Wenn es passt, schlage ich einen klaren nächsten Schritt vor: Audit, Sprint, Tool-Build oder einfache Website.",
+                        "Du zeigst mir den Workflow oder das Projekt. Wir besprechen, was aktuell funktioniert, wo es hakt und welcher nächste Schritt am saubersten ist. Wenn es passt, schlage ich einen klaren nächsten Schritt vor: Audit, Sprint, Tool-Build oder einfache Website.",
                 },
             ],
         },
         cta: {
-            title: "Bereit für ein internes Tool, das dein Team wirklich nutzt?",
+            title: "Bereit für ein internes Tool, das zu euren Abläufen passt?",
             body:
-                "Bring einen unstrukturierten Workflow mit. Ich helfe dir zu entscheiden, ob er manuell bleiben, stabilisiert oder zu verlässlicher Software werden sollte.",
+                "Bring einen chaotischen Workflow mit. Ich helfe dir zu entscheiden, ob er manuell bleiben, stabilisiert oder zu verlässlicher Software werden sollte.",
             primaryCta: "Gespräch buchen",
         },
-    }
+    },
 } as const;
