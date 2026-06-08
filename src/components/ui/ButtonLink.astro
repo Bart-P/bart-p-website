@@ -6,7 +6,7 @@ interface Props {
 
 const { variant = "primary", href } = Astro.props as Props;
 
-const baseClass = "whitespace-nowrap inline-block rounded-lg px-4 py-3 text-lg transition shadow";
+const baseClass = "whitespace-nowrap inline-block rounded-lg px-3 py-2 md:px-4 md:py-3 text-lg transition shadow";
 const variantClass =
     variant === "primary"
         ? "text-background bg-primary hover:bg-primary/80 hover:text-text/90 font-semibold"

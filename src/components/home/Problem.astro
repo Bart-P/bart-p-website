@@ -4,47 +4,49 @@ import IconListItem from "../ui/IconListItem.astro";
 import Card from "../ui/Card.astro";
 
 interface Props {
-  content: {
-    sectionLabel: string;
-    title: string;
-    intro: string;
-    quote: string;
-    listTitle: string;
-    painPoints: readonly string[];
-  };
+    content: {
+        sectionLabel: string;
+        title: string;
+        intro: string;
+        quote: string;
+        listTitle: string;
+        painPoints: readonly string[];
+    };
 }
 
 const { content } = Astro.props as Props;
 ---
 
 <div>
-  <div class="md:flex">
-    <div class="border-border flex flex-3/5 flex-col justify-between pr-6 pb-6">
-      <div class="mb-10">
-        <SectionHeader
-          label={content.sectionLabel}
-          title={content.title}
-          intro={content.intro}
-        />
-      </div>
-      <div
-        class="border-primary/20 bg-primary-soft whitespace-pre-line rounded-lg border px-6 py-4 shadow"
-      >
-        {content.quote}
-      </div>
-    </div>
-    <Card class="mb-6 flex-2/5">
-      <h3 class="mb-6 text-lg font-bold">
-        {content.listTitle}
-      </h3>
+    <div class="w-full md:flex">
+        <div
+            class="border-border flex flex-3/5 flex-col justify-between md:pr-6 pb-6"
+        >
+            <div class="mb-10">
+                <SectionHeader
+                    label={content.sectionLabel}
+                    title={content.title}
+                    intro={content.intro}
+                />
+            </div>
+            <div
+                class="border-primary/20 bg-primary-soft rounded-lg border px-6 py-4 whitespace-pre-line shadow"
+            >
+                {content.quote}
+            </div>
+        </div>
+        <Card class="mb-6 flex-2/5">
+            <h3 class="mb-6 text-lg font-bold">
+                {content.listTitle}
+            </h3>
 
-      <ul class="space-y-3">
-        {
-          content.painPoints.map((item) => (
-            <IconListItem>{item}</IconListItem>
-          ))
-        }
-      </ul>
-    </Card>
-  </div>
+            <ul class="space-y-3">
+                {
+                    content.painPoints.map((item) => (
+                        <IconListItem>{item}</IconListItem>
+                    ))
+                }
+            </ul>
+        </Card>
+    </div>
 </div>
