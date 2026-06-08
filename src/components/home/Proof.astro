@@ -1,4 +1,7 @@
 ---
+import ButtonLink from "../ui/ButtonLink.astro";
+import SectionHeader from "../ui/SectionHeader.astro";
+
 interface Props {
     content: {
         sectionLabel: string;
@@ -21,9 +24,11 @@ const { content } = Astro.props as Props;
 ---
 
 <div class="space-y-6">
-    <div class="text-primary mb-5 text-sm font-bold uppercase">{content.sectionLabel}</div>
-    <h2 class="mb-3 text-2xl font-bold">{content.title}</h2>
-    <p>{content.intro}</p>
+    <SectionHeader
+        label={content.sectionLabel}
+        title={content.title}
+        intro={content.intro}
+    />
     <div class="flex gap-3">
         <div class="flex-2/3 space-y-3 p-3">
             {
@@ -44,17 +49,13 @@ const { content } = Astro.props as Props;
             <p class="whitespace-pre-line">{content.sidebar.body}</p>
 
             <div class="space-x-3 space-y-3">
-                <button
-                    class="text-background bg-primary hover:bg-primary/80 hover:text-text/90 rounded-lg px-3 py-2 text-lg font-semibold transition"
-                >
+                <ButtonLink href="/" variant="primary">
                     {content.sidebar.primaryCta}
-                </button>
+                </ButtonLink>
 
-                <button
-                    class="text-text bg-background border-border hover:bg-text/20 rounded-lg border px-3 py-2 text-lg transition"
-                >
+                <ButtonLink href="/projects" variant="secondary">
                     {content.sidebar.secondaryCta}
-                </button>
+                </ButtonLink>
             </div>
         </div>
     </div>

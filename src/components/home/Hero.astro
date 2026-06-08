@@ -1,4 +1,6 @@
 ---
+import ButtonLink from "../ui/ButtonLink.astro";
+
 interface Props {
   content: {
     title: string;
@@ -24,17 +26,13 @@ const { content } = Astro.props as Props;
       {content.intro}
     </p>
     <div class="space-x-3">
-      <button
-        class="text-background bg-primary hover:bg-primary/80 hover:text-text/90 rounded-lg px-3 py-2 text-lg font-semibold transition"
-      >
+      <ButtonLink href="/" variant="primary">
         {content.primaryCta}
-      </button>
+      </ButtonLink>
 
-      <button
-        class="text-text bg-background border-border hover:bg-text/20 rounded-lg border px-3 py-2 text-lg transition"
-      >
+      <ButtonLink href="/projects" variant="secondary">
         {content.secondaryCta}
-      </button>
+      </ButtonLink>
     </div>
     <p class="text-muted">
       {content.proof}

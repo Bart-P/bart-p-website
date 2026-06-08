@@ -1,4 +1,6 @@
 ---
+import SectionHeader from "../ui/SectionHeader.astro";
+
 interface Props {
     content: {
         sectionLabel: string;
@@ -14,10 +16,7 @@ const { content } = Astro.props as Props;
 ---
 
 <div class="space-y-6">
-    <div class="text-primary mb-5 text-sm font-bold uppercase">
-        {content.sectionLabel}
-    </div>
-    <h2 class="mb-6 text-2xl font-bold">{content.title}</h2>
+    <SectionHeader label={content.sectionLabel} title={content.title} />
     <div class="grid grid-cols-2 gap-6">
         {
             content.items.map((item) => (

@@ -1,5 +1,7 @@
 ---
-import { Icon } from "astro-icon/components";
+import SectionHeader from "../ui/SectionHeader.astro";
+import IconListItem from "../ui/IconListItem.astro";
+import Card from "../ui/Card.astro";
 
 interface Props {
   content: {
@@ -19,15 +21,11 @@ const { content } = Astro.props as Props;
   <div class="flex">
     <div class="border-border flex flex-3/5 flex-col justify-between pr-6 pb-6">
       <div class="mb-10">
-        <div class="text-primary mb-5 text-sm font-bold uppercase">
-          {content.sectionLabel}
-        </div>
-        <h2 class="mb-3 text-2xl font-bold">
-          {content.title}
-        </h2>
-        <p>
-          {content.intro}
-        </p>
+        <SectionHeader
+          label={content.sectionLabel}
+          title={content.title}
+          intro={content.intro}
+        />
       </div>
       <div
         class="border-primary/20 bg-primary-soft whitespace-pre-line rounded-lg border px-6 py-4 shadow"
@@ -35,7 +33,7 @@ const { content } = Astro.props as Props;
         {content.quote}
       </div>
     </div>
-    <div class="border-border mb-6 flex-2/5 rounded-lg border p-6 shadow">
+    <Card class="mb-6 flex-2/5">
       <h3 class="mb-6 text-lg font-bold">
         {content.listTitle}
       </h3>
@@ -43,13 +41,10 @@ const { content } = Astro.props as Props;
       <ul class="space-y-3">
         {
           content.painPoints.map((item) => (
-            <li class="flex items-center gap-2">
-              <Icon name="lucide:chevron-right" class="text-secondary" />
-              {item}
-            </li>
+            <IconListItem>{item}</IconListItem>
           ))
         }
       </ul>
-    </div>
+    </Card>
   </div>
 </div>

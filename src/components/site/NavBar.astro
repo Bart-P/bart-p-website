@@ -1,4 +1,6 @@
 ---
+import ButtonLink from "../ui/ButtonLink.astro";
+
 interface Props {
     content: {
         brand: string;
@@ -20,7 +22,7 @@ interface Props {
 const { content: nav } = Astro.props as Props;
 ---
 
-<nav class="bg-background text-text border-border w-full border-b">
+<nav class="bg-background text-text border-border w-full border-b shadow">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
         <a href="/" class="text-lg font-semibold"> {nav.brand} </a>
 
@@ -37,17 +39,16 @@ const { content: nav } = Astro.props as Props;
                     </li>
                 ))
             }
+
             <li>
                 <span class="font-bold">{nav.languageSwitch.current}</span> |
                 <span class="text-muted">{nav.languageSwitch.other}</span>
             </li>
+
             <li>
-                <a
-                    href={nav.primaryCta.href}
-                    class="text-background bg-primary hover:bg-primary/80 hover:text-text/90 rounded-lg px-3 py-2 text-lg font-semibold transition"
-                >
+                <ButtonLink href={nav.primaryCta.href} variant="primary">
                     {nav.primaryCta.label}
-                </a>
+                </ButtonLink>
             </li>
         </ul>
     </div>

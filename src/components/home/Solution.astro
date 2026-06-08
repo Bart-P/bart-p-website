@@ -1,5 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
+import SectionHeader from "../ui/SectionHeader.astro";
+import Card from "../ui/Card.astro";
 
 interface Props {
   content: {
@@ -18,20 +20,21 @@ const { content } = Astro.props as Props;
 ---
 
 <div class="space-y-6">
-  <div class="text-primary mb-5 text-sm font-bold uppercase">{content.sectionLabel}</div>
-
-  <h2 class="mb-3 text-2xl font-bold">{content.title}</h2>
-  <p>{content.intro}</p>
+  <SectionHeader
+    label={content.sectionLabel}
+    title={content.title}
+    intro={content.intro}
+  />
   <div class="grid grid-cols-2 gap-6">
     {
       content.transformations.map((item) => (
-        <div class="border-border space-y-6 rounded-lg border p-6 shadow">
+        <Card class="space-y-6">
           <h3 class="flex items-center gap-2 text-xl font-bold">
             {item.from} <Icon name="lucide:arrow-right" class="text-secondary" />
             {item.to}
           </h3>
           <p>{item.description}</p>
-        </div>
+        </Card>
       ))
     }
   </div>

@@ -1,5 +1,7 @@
 ---
-import { Icon } from "astro-icon/components";
+import SectionHeader from "../ui/SectionHeader.astro";
+import IconListItem from "../ui/IconListItem.astro";
+import Card from "../ui/Card.astro";
 
 interface OfferCard {
     title: string;
@@ -25,16 +27,19 @@ const { content } = Astro.props as Props;
 ---
 
 <div class="space-y-6">
-    <div class="text-primary mb-5 text-sm font-bold uppercase">{content.sectionLabel}</div>
-    <h2 class="mb-3 text-2xl font-bold">{content.title}</h2>
-    <p>{content.intro}</p>
+    <SectionHeader
+        label={content.sectionLabel}
+        title={content.title}
+        intro={content.intro}
+    />
     <div class="grid grid-cols-3 gap-6">
         {
             content.cards.map((card, index) => (
-                <div
+                <Card
+                    variant={index === 0 ? "highlight" : "default"}
                     class={index === 0
-                        ? "border-primary/40 bg-primary-soft/30 flex flex-2/5 flex-col justify-between gap-3 rounded-lg border p-6 shadow"
-                        : "border-border flex flex-2/5 flex-col justify-between rounded-lg border p-6 shadow"}
+                        ? "flex flex-2/5 flex-col justify-between gap-3"
+                        : "flex flex-2/5 flex-col justify-between"}
                 >
                     <div class="space-y-3">
                         <h3 class="flex items-center gap-2 text-xl font-bold">
@@ -48,13 +53,7 @@ const { content } = Astro.props as Props;
                         <ul>
                             {
                                 card.bestFor.map((item) => (
-                                    <li class="flex items-center gap-3">
-                                        <Icon
-                                            name="lucide:chevron-right"
-                                            class="text-secondary"
-                                        />
-                                        {item}
-                                    </li>
+                                    <IconListItem>{item}</IconListItem>
                                 ))
                             }
                         </ul>
@@ -63,11 +62,11 @@ const { content } = Astro.props as Props;
                         <h4 class="font-bold">{card.resultTitle}</h4>
                         <p>{card.result}</p>
                     </div>
-                </div>
+                </Card>
             ))
         }
     </div>
-    <div class="border-border flex-2/5 space-y-3 rounded-lg border p-6 shadow">
+    <Card class="flex-2/5 space-y-3">
         <h4
             class="border-border text-muted w-full border-b pb-6 text-center font-bold"
         >
@@ -83,13 +82,7 @@ const { content } = Astro.props as Props;
                 <ul>
                     {
                         content.websiteOffer.bestFor.map((item) => (
-                            <li class="flex items-center gap-3">
-                                <Icon
-                                    name="lucide:chevron-right"
-                                    class="text-secondary"
-                                />
-                                {item}
-                            </li>
+                            <IconListItem>{item}</IconListItem>
                         ))
                     }
                 </ul>
@@ -99,5 +92,5 @@ const { content } = Astro.props as Props;
                 <p>{content.websiteOffer.result}</p>
             </div>
         </div>
-    </div>
+    </Card>
 </div>
