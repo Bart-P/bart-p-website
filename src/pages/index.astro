@@ -9,21 +9,27 @@ import Proof from "../components/home/Proof.astro";
 import Faq from "../components/home/Faq.astro";
 import Cta from "../components/home/Cta.astro";
 import Footer from "../components/site/Footer.astro";
+import { homeContent } from "../i18n/home";
+import { commonContent } from "../i18n/common";
+
+const lang = "en" as const;
+const content = homeContent[lang];
+const common = commonContent[lang];
 ---
 
 <BaseLayout
     title="Astro Landing Page Starter"
     description="A clean Astro and Tailwind starter for a static landing page."
 >
-    <NavBar />
+    <NavBar content={common.nav} />
     <div class="mx-auto max-w-6xl space-y-18 p-6">
-        <Hero />
-        <Problem />
-        <Solution />
-        <Offer />
-        <Proof />
-        <Faq />
-        <Cta />
-        <Footer />
+        <Hero content={content.hero} />
+        <Problem content={content.problem} />
+        <Solution content={content.solution} />
+        <Offer content={content.offers} />
+        <Proof content={content.proof} />
+        <Faq content={content.faq} />
+        <Cta content={content.cta} />
     </div>
+    <Footer content={common.footer} />
 </BaseLayout>

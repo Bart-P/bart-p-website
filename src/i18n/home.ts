@@ -22,7 +22,7 @@ export const homeContent = {
             intro:
                 "Most teams do not start by building software. They start with something simple: a useful prompt, a spreadsheet, a custom GPT, or an n8n/Make/Zapier automation.",
             quote:
-                "Using the same prompt every week and changing it by hand is like writing invoices in Word. It works. But it is not a system.",
+                "Using the same prompt every week and changing it by hand is like writing invoices in Word.\nIt works. But it is not a system.",
             listTitle: "Once the workflow becomes part of daily work, the cracks show:",
             painPoints: [
                 "Prompts get copied and edited by hand",
@@ -74,7 +74,7 @@ export const homeContent = {
             cards: [
                 {
                     title: "AI Workflow / Automation Audit",
-                    price: "€500-€1,500",
+                    price: "€500–€1,500",
                     description:
                         "Find out where your current AI workflow, automation, spreadsheet, or prototype is fragile.",
                     bestForTitle: "Best for",
@@ -89,7 +89,7 @@ export const homeContent = {
                 },
                 {
                     title: "Stabilization Sprint",
-                    price: "€2,500-€7,500",
+                    price: "€2,500–€7,500",
                     description:
                         "Stabilize one repeated workflow that is becoming too fragile, manual, or hard to run.",
                     bestForTitle: "Best for",
@@ -104,7 +104,7 @@ export const homeContent = {
                 },
                 {
                     title: "AI-Assisted Internal Tool Build",
-                    price: "€7,500-€20,000+",
+                    price: "€7,500–€20,000+",
                     description:
                         "Build a focused internal tool around an AI-assisted or operations workflow that is already business-critical.",
                     bestForTitle: "Best for",
@@ -120,7 +120,7 @@ export const homeContent = {
             ],
             websiteOffer: {
                 title: "Simple Website Without WordPress",
-                price: "€1,500-€3,500",
+                price: "€1,500–€3,500",
                 description:
                     "A clean, fast business website without WordPress, plugin updates, or unnecessary backend complexity.",
                 bestForTitle: "Best for",
@@ -158,7 +158,7 @@ export const homeContent = {
             sidebar: {
                 title: "Have a workflow that should become an internal tool?",
                 body:
-                    "Or need a simple website without WordPress overhead? Bring the problem. I'll help you decide whether it should stay manual, be stabilized, or become software.",
+                    "Or need a simple website without WordPress overhead?\nBring the problem. I’ll help you decide whether it should stay manual, be stabilized, or become software.",
                 primaryCta: "Book a call",
                 secondaryCta: "See selected work",
             },
@@ -195,7 +195,7 @@ export const homeContent = {
                 {
                     question: "What do you not do?",
                     answer:
-                        "I do not offer generic AI trend consulting, enterprise transformation programs, or more prompts as the final solution. The goal is practical systems, not more complexity.",
+                        "I do not offer generic AI trend consulting, enterprise transformation programs, or “more prompts” as the final solution. The goal is practical systems, not more complexity.",
                 },
                 {
                     question: "Which stack do you use?",
@@ -212,7 +212,7 @@ export const homeContent = {
         cta: {
             title: "Ready to build an internal tool your team can actually use?",
             body:
-                "Bring one messy workflow. I'll help you decide whether it should stay manual, be stabilized, or become reliable software.",
+                "Bring one messy workflow. I’ll help you decide whether it should stay manual, be stabilized, or become reliable software.",
             primaryCta: "Book a call",
         },
     },

@@ -1,203 +1,102 @@
 ---
 import { Icon } from "astro-icon/components";
+
+interface OfferCard {
+    title: string;
+    price: string;
+    description: string;
+    bestForTitle: string;
+    bestFor: readonly string[];
+    resultTitle: string;
+    result: string;
+}
+
+interface Props {
+    content: {
+        sectionLabel: string;
+        title: string;
+        intro: string;
+        cards: readonly OfferCard[];
+        websiteOffer: OfferCard;
+    };
+}
+
+const { content } = Astro.props as Props;
 ---
 
 <div class="space-y-6">
-    <div class="text-primary mb-5 text-sm font-bold uppercase">Offers</div>
-    <h2 class="mb-3 text-2xl font-bold">Ways to work together</h2>
-    <p>
-        Start with a small audit, stabilize one workflow, or build an
-        AI-assisted internal tool when the process is already business-critical.
-    </p>
+    <div class="text-primary mb-5 text-sm font-bold uppercase">{content.sectionLabel}</div>
+    <h2 class="mb-3 text-2xl font-bold">{content.title}</h2>
+    <p>{content.intro}</p>
     <div class="grid grid-cols-3 gap-6">
-        <div
-            class="border-primary/40 bg-primary-soft/30 flex flex-2/5 flex-col justify-between gap-3 rounded-lg border p-6 shadow"
-        >
-            <div class="space-y-3">
-                <h3 class="flex items-center gap-2 text-xl font-bold">
-                    AI Workflow / Automation Audit
-                </h3>
-                <p class="text-primary font-bold">€500–€1,500</p>
-                <p>
-                    Find out where your current AI workflow, automation,
-                    spreadsheet, or prototype is fragile.
-                </p>
-            </div>
-            <div class="space-y-3">
-                <h4 class="font-bold">Best for</h4>
-                <ul>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Messy prompt workflows
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Fragile n8n / Make / Zapier flows
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Spreadsheet-heavy processes
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-3">
-                <h4 class="font-bold">Result</h4>
-                <p>
-                    Clear next step: keep it manual, stabilize it, or turn it
-                    into software.
-                </p>
-            </div>
-        </div>
-        <div
-            class="border-border flex flex-2/5 flex-col justify-between rounded-lg border p-6 shadow"
-        >
-            <div class="space-y-3">
-                <h3 class="flex items-center gap-2 text-xl font-bold">
-                    Stabilization Sprint
-                </h3>
-                <p class="text-primary font-bold">€2,500–€7,500</p>
-                <p>
-                    Stabilize one repeated workflow that is becoming too
-                    fragile, manual, or hard to run.
-                </p>
-            </div>
-            <div class="space-y-3">
-                <h4 class="font-bold">Best for</h4>
-                <ul>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Repeated business process
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Broken or unstable automation
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        AI workflow that needs structure
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-3">
-                <h4 class="font-bold">Result</h4>
-                <p>
-                    One process becomes less fragile and less dependent on
-                    copy-paste.
-                </p>
-            </div>
-        </div>
-        <div
-            class="border-border flex flex-2/5 flex-col justify-between rounded-lg border p-6 shadow"
-        >
-            <div class="space-y-3">
-                <h3 class="flex items-center gap-2 text-xl font-bold">
-                    AI-Assisted Internal Tool Build
-                </h3>
-                <p class="text-primary font-bold">€7,500–€20,000+</p>
-                <p>
-                    Build a focused internal tool around an AI-assisted or
-                    operations workflow that is already business-critical.
-                </p>
-            </div>
-            <div class="space-y-3">
-                <h4 class="font-bold">Best for</h4>
-                <ul>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Repeated e-commerce workflows
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Internal operations tools
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Processes used by the team
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-3">
-                <h4 class="font-bold">Result</h4>
-                <p>
-                    A reliable internal tool built around how your team actually
-                    works.
-                </p>
-            </div>
-        </div>
+        {
+            content.cards.map((card, index) => (
+                <div
+                    class={index === 0
+                        ? "border-primary/40 bg-primary-soft/30 flex flex-2/5 flex-col justify-between gap-3 rounded-lg border p-6 shadow"
+                        : "border-border flex flex-2/5 flex-col justify-between rounded-lg border p-6 shadow"}
+                >
+                    <div class="space-y-3">
+                        <h3 class="flex items-center gap-2 text-xl font-bold">
+                            {card.title}
+                        </h3>
+                        <p class="text-primary font-bold">{card.price}</p>
+                        <p>{card.description}</p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-bold">{card.bestForTitle}</h4>
+                        <ul>
+                            {
+                                card.bestFor.map((item) => (
+                                    <li class="flex items-center gap-3">
+                                        <Icon
+                                            name="lucide:chevron-right"
+                                            class="text-secondary"
+                                        />
+                                        {item}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-bold">{card.resultTitle}</h4>
+                        <p>{card.result}</p>
+                    </div>
+                </div>
+            ))
+        }
     </div>
     <div class="border-border flex-2/5 space-y-3 rounded-lg border p-6 shadow">
         <h4
             class="border-border text-muted w-full border-b pb-6 text-center font-bold"
         >
-            Simple Website Without WordPress
+            {content.websiteOffer.title}
         </h4>
         <div class="flex gap-3">
             <div class="flex-1/3 space-y-3">
-                <p class="text-secondary font-bold">€1,500–€3,500</p>
-                <p>
-                    A clean, fast business website without WordPress, plugin
-                    updates, or unnecessary backend complexity.
-                </p>
+                <p class="text-secondary font-bold">{content.websiteOffer.price}</p>
+                <p>{content.websiteOffer.description}</p>
             </div>
             <div class="flex-1/3 space-y-3">
-                <h4 class="text-muted font-bold">Best for</h4>
+                <h4 class="text-muted font-bold">{content.websiteOffer.bestForTitle}</h4>
                 <ul>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Small business websites
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Service pages
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <Icon
-                            name="lucide:chevron-right"
-                            class="text-secondary"
-                        />
-                        Landing pages
-                    </li>
+                    {
+                        content.websiteOffer.bestFor.map((item) => (
+                            <li class="flex items-center gap-3">
+                                <Icon
+                                    name="lucide:chevron-right"
+                                    class="text-secondary"
+                                />
+                                {item}
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
             <div class="flex-1/3 space-y-3">
-                <h4 class="text-muted font-bold">Result</h4>
-                <p>
-                    A simple static website that is easy to maintain and does
-                    not depend on constant plugin updates.
-                </p>
+                <h4 class="text-muted font-bold">{content.websiteOffer.resultTitle}</h4>
+                <p>{content.websiteOffer.result}</p>
             </div>
         </div>
     </div>
