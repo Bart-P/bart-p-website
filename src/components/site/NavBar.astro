@@ -1,7 +1,23 @@
 ---
-import { commonContent } from "../../i18n/common";
+interface Props {
+    content: {
+        brand: string;
+        links: readonly {
+            label: string;
+            href: string;
+        }[];
+        languageSwitch: {
+            current: string;
+            other: string;
+        };
+        primaryCta: {
+            label: string;
+            href: string;
+        };
+    };
+}
 
-const nav = commonContent.en.nav;
+const { content: nav } = Astro.props as Props;
 ---
 
 <nav class="bg-background text-text border-border w-full border-b">
