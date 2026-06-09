@@ -1,0 +1,35 @@
+---
+interface Props {
+    content: {
+        title: string;
+        subtitle: string;
+        info: string;
+        image: {
+            src: string;
+        };
+    };
+}
+
+const { content } = Astro.props as Props;
+---
+
+<div class="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-6">
+    <div class="my-auto flex-1/2 space-y-8 pr-4 md:min-w-[365px]">
+        <h1 class="text-text text-4xl leading-tight font-bold">
+            {content.title}
+        </h1>
+        <p class="text-xl">
+            {content.subtitle}
+        </p>
+        <div class="space-y-3 space-x-3"></div>
+        <p class="text-muted">
+            {content.info}
+        </p>
+    </div>
+    <div class="md:flex-1/2 w-full">
+        <img
+            class="max-w-[70%] md:max-w-full rounded-lg mx-auto [mask-image:linear-gradient(to_right,transparent_0%,black_50%,black_100%)] object-cover [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_50%,black_100%)]"
+            src={content.image.src}
+        />
+    </div>
+</div>

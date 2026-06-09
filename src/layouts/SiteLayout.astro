@@ -1,0 +1,26 @@
+---
+import Footer from "../components/site/Footer.astro";
+import NavBar from "../components/site/NavBar.astro";
+import { commonContent } from "../i18n/common";
+import "../styles/global.css";
+import BaseLayout from "./BaseLayout.astro";
+import { type Lang } from "../i18n/lang";
+
+interface Props {
+    title: string;
+    description: string;
+    lang: Lang;
+}
+
+const { title, description, lang } = Astro.props as Props;
+
+const common = commonContent[lang];
+---
+
+<BaseLayout title={title} description={description} lang={lang}>
+    <NavBar content={common.nav} />
+    <div class="max-w-6xl space-y-18 p-3 sm:mx-3 md:mx-auto md:p-6">
+        <slot />
+    </div>
+    <Footer content={common.footer} />
+</BaseLayout>

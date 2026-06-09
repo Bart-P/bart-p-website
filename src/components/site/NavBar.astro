@@ -28,31 +28,35 @@ const homeHref = nav.links[0]?.href ?? "/";
     <div
         class="mx-auto max-w-max items-center justify-between space-y-3 px-6 py-3 text-center md:flex md:max-w-6xl"
     >
-        <a href={homeHref} class="text-lg font-semibold"> {nav.brand} </a>
+        <a href={homeHref} class="mt-3 text-lg font-semibold flex gap-3 items-center">
+            <img src="/assets/logo.png" class="max-h-8" />
+            {nav.brand}
+        </a>
 
-        <ul class="flex items-center gap-6">
-            {
-                nav.links.map((item) => (
-                    <li>
-                        <a
-                            href={item.href}
-                            class="hover:text-secondary text-sm font-medium"
-                        >
-                            {item.label}
-                        </a>
-                    </li>
-                ))
-            }
-
-            <li>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-5 text-lg">
+            <ul class="flex items-center gap-6">
+                {
+                    nav.links.map((item) => (
+                        <li>
+                            <a
+                                href={item.href}
+                                class="hover:text-secondary text-sm font-medium"
+                            >
+                                {item.label}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+            <div class="text-sm">
                 <span class="font-bold">{nav.languageSwitch.current}</span> |
                 <a class="text-muted" href={nav.languageSwitch.href}>
                     {nav.languageSwitch.other}
                 </a>
-            </li>
-        </ul>
-        <ButtonLink href={nav.primaryCta.href} variant="primary">
-            {nav.primaryCta.label}
-        </ButtonLink>
+            </div>
+            <ButtonLink href={nav.primaryCta.href} variant="primary">
+                {nav.primaryCta.label}
+            </ButtonLink>
+        </div>
     </div>
 </nav>

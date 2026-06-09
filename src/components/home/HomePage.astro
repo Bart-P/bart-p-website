@@ -1,6 +1,5 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import NavBar from "../site/NavBar.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
 import Hero from "./Hero.astro";
 import Problem from "./Problem.astro";
 import Solution from "./Solution.astro";
@@ -8,11 +7,9 @@ import Offer from "./Offer.astro";
 import Proof from "./Proof.astro";
 import Faq from "./Faq.astro";
 import Cta from "./Cta.astro";
-import Footer from "../site/Footer.astro";
 import { homeContent } from "../../i18n/home";
 import { commonContent } from "../../i18n/common";
-
-type Lang = keyof typeof homeContent;
+import { type Lang } from "../../i18n/lang.ts";
 
 interface Props {
     lang: Lang;
@@ -26,28 +23,24 @@ const projectsHref = lang === "de" ? "/de/projects" : "/projects";
 const contactHref = common.nav.primaryCta.href;
 ---
 
-<BaseLayout
+<SiteLayout
     title={content.meta.title}
     description={content.meta.description}
     lang={lang}
 >
-    <NavBar content={common.nav} />
-    <div class="max-w-6xl space-y-18 p-3 sm:mx-3 md:mx-auto md:p-6">
-        <Hero
-            content={content.hero}
-            primaryCtaHref={contactHref}
-            secondaryCtaHref={projectsHref}
-        />
-        <Problem content={content.problem} />
-        <Solution content={content.solution} />
-        <Offer content={content.offers} />
-        <Proof
-            content={content.proof}
-            primaryCtaHref={contactHref}
-            secondaryCtaHref={projectsHref}
-        />
-        <Faq content={content.faq} />
-        <Cta content={content.cta} primaryCtaHref={contactHref} />
-    </div>
-    <Footer content={common.footer} />
-</BaseLayout>
+    <Hero
+        content={content.hero}
+        primaryCtaHref={contactHref}
+        secondaryCtaHref={projectsHref}
+    />
+    <Problem content={content.problem} />
+    <Solution content={content.solution} />
+    <Offer content={content.offers} />
+    <Proof
+        content={content.proof}
+        primaryCtaHref={contactHref}
+        secondaryCtaHref={projectsHref}
+    />
+    <Faq content={content.faq} />
+    <Cta content={content.cta} primaryCtaHref={contactHref} />
+</SiteLayout>

@@ -1,0 +1,23 @@
+---
+import { projectsContent } from "../../i18n/projects";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Hero from "./Hero.astro";
+import Projects from "./Projects.astro";
+import { type Lang } from "../../i18n/lang";
+
+interface Props {
+    lang: Lang;
+}
+
+const { lang } = Astro.props as Props;
+const content = projectsContent[lang];
+---
+
+<SiteLayout
+    title={content.meta.title}
+    description={content.meta.description}
+    lang={lang}
+>
+    <Hero content={content.hero} />
+    <Projects />
+</SiteLayout>
