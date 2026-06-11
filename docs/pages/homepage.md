@@ -92,13 +92,13 @@ Turn one messy workflow into a reliable internal tool or stabilized automation.
 **Description:**  
 Build a focused internal tool around an AI-assisted or operations workflow that is already business-critical.
 
-### Simple Website Without WordPress
+### Website Without WordPress
 
 **Price:**  
 €1,500–€3,500
 
 **Description:**  
-Secondary offer. Simple static business websites without plugin maintenance.
+Secondary offer. Static business websites without plugin maintenance.
 
 **Note:**  
 This offer should be visually smaller or secondary compared to the internal tools / workflow offers.

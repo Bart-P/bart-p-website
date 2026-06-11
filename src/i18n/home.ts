@@ -119,7 +119,7 @@ export const homeContent = {
                 },
             ],
             websiteOffer: {
-                title: "Simple Website Without WordPress",
+                title: "Website Without WordPress",
                 price: "€1,500–€3,500",
                 description:
                     "A clean, fast business website without WordPress, plugin updates, or unnecessary backend complexity.",
@@ -131,7 +131,7 @@ export const homeContent = {
                 ],
                 resultTitle: "Result",
                 result:
-                    "A simple static website that is easy to maintain and does not depend on constant plugin updates.",
+                    "A static website that is easy to maintain and does not depend on constant plugin updates.",
             },
         },
         proof: {
@@ -158,7 +158,7 @@ export const homeContent = {
             sidebar: {
                 title: "Have a workflow that should become an internal tool?",
                 body:
-                    "Or need a simple website without WordPress overhead?\nBring the problem. I’ll help you decide whether it should stay manual, be stabilized, or become software.",
+                    "Or need a website without WordPress overhead?\nBring the problem. I’ll help you decide whether it should stay manual, be stabilized, or become software.",
                 primaryCta: "Book a call",
                 secondaryCta: "See selected work",
             },
@@ -200,12 +200,12 @@ export const homeContent = {
                 {
                     question: "Which stack do you use?",
                     answer:
-                        "For internal tools, I mainly work with Laravel, Vue, Inertia, Tailwind, SQLite/MySQL, APIs, and AI-assisted workflows. For simple static websites, I use Astro and Tailwind.",
+                        "For internal tools, I mainly work with Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs, and AI-assisted workflows. For static websites, I use Astro and Tailwind.",
                 },
                 {
                     question: "What happens after I book a call?",
                     answer:
-                        "You show me the workflow or project. We talk through what currently works, where it breaks, and what the cleanest next step could be. If there is a fit, I suggest a clear next step: audit, sprint, full build, or simple website.",
+                        "You show me the workflow or project. We talk through what currently works, where it breaks, and what the cleanest next step could be. If there is a fit, I suggest a clear next step: audit, sprint, full build, or website.",
                 },
             ],
         },
@@ -336,7 +336,7 @@ export const homeContent = {
                 },
             ],
             websiteOffer: {
-                title: "Einfache Website ohne WordPress",
+                title: "Website ohne WordPress",
                 price: "€1,500–€3,500",
                 description:
                     "Eine saubere, schnelle Business-Website ohne WordPress, Plugin-Updates oder unnötige Backend-Komplexität.",
@@ -348,7 +348,7 @@ export const homeContent = {
                 ],
                 resultTitle: "Ergebnis",
                 result:
-                    "Eine einfache statische Website, leicht zu pflegen und ohne ständige Plugin-Updates.",
+                    "Eine statische Website, leicht zu pflegen und ohne ständige Plugin-Updates.",
             },
         },
         proof: {
@@ -375,7 +375,7 @@ export const homeContent = {
             sidebar: {
                 title: "Du hast einen Workflow, der ein internes Tool werden sollte?",
                 body:
-                    "Oder brauchst du eine einfache Website ohne WordPress-Overhead?\nBring das Problem mit. Ich helfe dir zu entscheiden, ob es manuell bleiben, stabilisiert oder zu Software werden sollte.",
+                    "Oder brauchst du eine Website ohne WordPress-Overhead?\nBring das Problem mit. Ich helfe dir zu entscheiden, ob es manuell bleiben, stabilisiert oder zu Software werden sollte.",
                 primaryCta: "Gespräch buchen",
                 secondaryCta: "Ausgewählte Projekte ansehen",
             },
@@ -417,12 +417,12 @@ export const homeContent = {
                 {
                     question: "Welchen Stack nutzt du?",
                     answer:
-                        "Für interne Tools arbeite ich vor allem mit Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs und KI-gestützten Workflows. Für einfache statische Websites nutze ich Astro und Tailwind.",
+                        "Für interne Tools arbeite ich vor allem mit Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs und KI-gestützten Workflows. Für statische Websites nutze ich Astro und Tailwind.",
                 },
                 {
                     question: "Was passiert nach der Terminbuchung?",
                     answer:
-                        "Du zeigst mir den Workflow oder das Projekt. Wir besprechen, was aktuell funktioniert, wo es hakt und welcher nächste Schritt am saubersten ist. Wenn es passt, schlage ich einen klaren nächsten Schritt vor: Audit, Sprint, Tool-Build oder einfache Website.",
+                        "Du zeigst mir den Workflow oder das Projekt. Wir besprechen, was aktuell funktioniert, wo es hakt und welcher nächste Schritt am saubersten ist. Wenn es passt, schlage ich einen klaren nächsten Schritt vor: Audit, Sprint, Tool-Build oder Website.",
                 },
             ],
         },
