@@ -1,7 +1,74 @@
 ---
+import { type Project } from "../../types";
+import SectionHeader from "../ui/SectionHeader.astro";
 
+interface Props {
+    projects: Project[];
+}
+
+const { projects } = Astro.props;
 ---
 
-<div>
-    Some Projects
+<div class="space-y-16">
+    {
+        projects.map((project) => (
+            <div class="space-y-8">
+                <div class="flex-1/3">
+                    <SectionHeader
+                        label={project.name}
+                        title={project.summary}
+                        intro={project.description}
+                    />
+
+                    <p class="mb-3">{project.outcome}</p>
+
+                    <div class="mb-6 flex flex-wrap gap-2">
+                        {project.stack.map((stack) => (
+                            <span class="bg-primary text-background py-.5 rounded-2xl px-2 font-semibold text-nowrap">
+                                {stack}
+                            </span>
+                        ))}
+                    </div>
+
+                    <div>
+                        Status:{" "}
+                        <span class="text-secondary border-border py-.5 rounded-2xl border px-2">
+                            {project.status}
+                        </span>
+                    </div>
+                </div>
+                {project.images.length > 1 ? (
+                    <div class="grid aspect-[2/1] grid-cols-2 grid-rows-2 gap-2 overflow-hidden">
+                        <div class="row-span-2 overflow-hidden">
+                            <img
+                                class="h-full w-full rounded object-cover object-top"
+                                src={project.images[0]}
+                            />
+                        </div>
+
+                        <div class="overflow-hidden">
+                            <img
+                                class="h-full w-full rounded object-cover object-top"
+                                src={project.images[1]}
+                            />
+                        </div>
+
+                        <div class="overflow-hidden">
+                            <img
+                                class="h-full w-full rounded object-cover object-top"
+                                src={project.images[2]}
+                            />
+                        </div>
+                    </div>
+                ) : (
+                    <div class="aspect-2/1 overflow-hidden">
+                        <img
+                            class="h-full w-full rounded object-cover object-top"
+                            src={project.images[0]}
+                        />
+                    </div>
+                )}
+            </div>
+        ))
+    }
 </div>
