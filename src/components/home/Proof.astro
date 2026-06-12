@@ -51,7 +51,7 @@ const { content, primaryCtaHref, secondaryCtaHref } = Astro.props as Props;
             <p class="whitespace-pre-line">{content.sidebar.body}</p>
 
             <div class="space-x-3 space-y-3">
-                <ButtonLink href={primaryCtaHref} variant="primary">
+                <ButtonLink href={primaryCtaHref} variant="primary" target="_blank">
                     {content.sidebar.primaryCta}
                 </ButtonLink>
 

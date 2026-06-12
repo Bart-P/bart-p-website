@@ -2,9 +2,10 @@
 interface Props {
     variant?: "primary" | "secondary";
     href: string;
+    target?: string
 }
 
-const { variant = "primary", href } = Astro.props as Props;
+const { variant = "primary", href, target = "_self" } = Astro.props as Props;
 
 const baseClass = "whitespace-nowrap inline-block rounded-lg px-3 py-2 md:px-4 md:py-3 text-lg transition shadow";
 const variantClass =
@@ -14,4 +15,4 @@ const variantClass =
 const classes = `${baseClass} ${variantClass}`;
 ---
 
-<a href={href} class={classes}><slot /></a>
+<a href={href} class={classes} target={target}><slot /></a>

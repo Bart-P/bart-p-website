@@ -14,7 +14,7 @@ export const commonContent = {
             },
             primaryCta: {
                 label: "Book a call",
-                href: "/contact",
+                href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0eEY05Vnb93KJ0RNbf2JA9uqTkll3iPTRUvgzghKgDeCphHN3jHVJtfCVeLoT5b1m02D4YI4rJ",
             },
         },
         footer: {
@@ -24,11 +24,11 @@ export const commonContent = {
                 { label: "Home", href: "/" },
                 { label: "Projects", href: "/projects" },
                 { label: "Contact", href: "/contact" },
-                { label: "Legal Notice", href: "/legal-notice" },
-                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "Legal Notice", href: "/contact" },
+                { label: "Privacy Policy", href: "/contact" },
                 {
                     label: "LinkedIn",
-                    href: "https://www.linkedin.com/in/YOUR-LINKEDIN-SLUG/",
+                    href: "https://www.linkedin.com/in/bartek-para-bb43411b/",
                 },
             ],
         },
@@ -48,21 +48,42 @@ export const commonContent = {
             },
             primaryCta: {
                 label: "Gespräch buchen",
-                href: "/de/contact",
+                href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0eEY05Vnb93KJ0RNbf2JA9uqTkll3iPTRUvgzghKgDeCphHN3jHVJtfCVeLoT5b1m02D4YI4rJ",
             },
         },
         footer: {
             brand: "Bartek Para",
             tagline: "Interne Tools für E-Commerce-Teams und Agenturen.",
             links: [
-                { label: "Start", href: "/de/" },
-                { label: "Projekte", href: "/de/projects" },
-                { label: "Kontakt", href: "/de/contact" },
-                { label: "Impressum", href: "/de/impressum" },
-                { label: "Datenschutz", href: "/de/datenschutz" },
+                { 
+                    label: "Start",
+                    href: "/de/",
+                    target: "_self"
+                },
+                { 
+                    label: "Projekte",
+                    href: "/de/projects", 
+                    target: "_self"
+                },
+                {
+                    label: "Kontakt", 
+                    href: "/de/contact",
+                    target: "_self"
+                },
+                { 
+                    label: "Impressum",
+                    href: "/de/contact",
+                    target: "_self"
+                },
+                {
+                    label: "Datenschutz", 
+                    href: "/de/datenschutz",
+                    target: "_self"
+                },
                 {
                     label: "LinkedIn",
-                    href: "https://www.linkedin.com/in/YOUR-LINKEDIN-SLUG/",
+                    href: "https://www.linkedin.com/in/bartek-para-bb43411b/",
+                    target: "_blank"
                 },
             ],
         },

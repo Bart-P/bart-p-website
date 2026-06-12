@@ -19,7 +19,7 @@ const { content, primaryCtaHref } = Astro.props as Props;
     <h2 class="font-bold text-2xl">{content.title}</h2>
     <p>{content.body}</p>
 
-    <ButtonLink href={primaryCtaHref} variant="primary">
+    <ButtonLink href={primaryCtaHref} variant="primary" target="_blank">
         {content.primaryCta}
     </ButtonLink>
 </div>

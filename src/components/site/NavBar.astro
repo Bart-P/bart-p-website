@@ -26,7 +26,7 @@ const homeHref = nav.links[0]?.href ?? "/";
 
 <nav class="bg-background text-text border-border min-w-screen border-b shadow">
     <div
-        class="mx-auto max-w-max items-center justify-between space-y-3 px-6 py-3 text-center md:flex md:max-w-6xl"
+        class="mx-auto max-w-max items-center justify-between space-y-3 px-6 py-3 text-center md:flex md:max-w-7xl"
     >
         <a href={homeHref} class="mt-3 text-lg font-semibold flex gap-3 items-center">
             <img src="/assets/logo.png" class="max-h-8" />
@@ -54,7 +54,7 @@ const homeHref = nav.links[0]?.href ?? "/";
                     {nav.languageSwitch.other}
                 </a>
             </div>
-            <ButtonLink href={nav.primaryCta.href} variant="primary">
+            <ButtonLink href={nav.primaryCta.href} variant="primary" target="_blank">
                 {nav.primaryCta.label}
             </ButtonLink>
         </div>
