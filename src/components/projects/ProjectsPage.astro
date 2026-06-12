@@ -4,6 +4,8 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
 import Hero from "./Hero.astro";
 import Projects from "./Projects.astro";
 import { type Lang } from "../../types";
+import Cta from "../home/Cta.astro";
+import { commonContent } from "../../i18n/common";
 
 interface Props {
     lang: Lang;
@@ -11,6 +13,8 @@ interface Props {
 
 const { lang } = Astro.props as Props;
 const content = projectsContent[lang];
+const common = commonContent[lang];
+const contactHref = common.nav.primaryCta.href;
 
 ---
 
@@ -21,4 +25,5 @@ const content = projectsContent[lang];
 >
     <Hero content={content.hero} />
     <Projects projects={content.projects} />
+    <Cta content={content.cta} primaryCtaHref={contactHref} />
 </SiteLayout>

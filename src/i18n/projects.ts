@@ -52,7 +52,13 @@ export const projectsContent = {
                 "/assets/expensior/expensior_loan_edit.png",
                 "/assets/expensior/expensior_expenses.png",
             ],
-        }]
+        }],
+        cta: {
+            title: "Have a workflow that should become software?",
+            body:
+                "Bring one messy workflow. I’ll help you decide whether it should stay manual, be stabilized, or become reliable software.",
+            primaryCta: "Book a call",
+        },
     },
     de: {
         meta: {
@@ -87,6 +93,40 @@ export const projectsContent = {
                     "/assets/listegy/listegy_generation.png",
                 ],
             },
+            {
+                name: "Infographics Background Generator",
+                summary:
+                    "n8n-Workflow zur Erstellung persona-basierter Hintergrundszenen für E-Commerce-Visuals.",
+                description:
+                    "Dieser Workflow wurde in einem E-Commerce-Unternehmen genutzt, um die Erstellung von Produktinfografiken zu unterstützen. Er nimmt Produktdaten, Markenkontext und ein Produktbild als Input, generiert eine Buyer Persona, leitet relevante Pain Points ab und verwandelt sie in Hintergrundideen für Produktvisuals.",
+                outcome:
+                    "Der Workflow hat in der Praxis funktioniert und wurde wöchentlich bis monatlich genutzt. Er zeigte außerdem, wie KI-Workflows echte E-Commerce-Content-Arbeit unterstützen können und hat später die Richtung von Listegy mitgeprägt.",
+                stack: ["n8n", "Google Drive", "KI-Workflows", "Bildgenerierung"],
+                status: "abgeschlossen",
+                images: ["/assets/infographics-background-generator/workflow.png"],
+            },
+            {
+                name: "Expensior",
+                summary:
+                    "Ausgaben- und Zahlungstool statt tabellenlastigem Tracking.",
+                description:
+                    "Wiederkehrende Ausgaben, Darlehenszahlungen, Zahlungsstatus und Monatsübersichten lassen sich schnell in Tabellen starten, werden aber schwer zu verwalten, sobald sie Teil des Alltags werden. Expensior macht daraus ein datenbankgestütztes internes Tool mit strukturierten Ausgaben, wiederkehrenden Zahlungen, Darlehenslogik, Status, Filtern und Übersichtsseiten.",
+                outcome:
+                    "Tabellenlastiges Business-Tracking kann zu einem fokussierten internen Tool werden, mit klareren Daten, wiederholbaren Prozessen und besserem Überblick über offene und bezahlte Posten.",
+                stack: ["Laravel", "Vue", "Inertia", "Tailwind", "SQLite"],
+                status: "abgeschlossen",
+                images: [
+                    "/assets/expensior/expensior_dashboard.png",
+                    "/assets/expensior/expensior_loan_edit.png",
+                    "/assets/expensior/expensior_expenses.png",
+                ],
+            }
         ],
+        cta: {
+            title: "Hast du einen Workflow, der zu Software werden sollte?",
+            body:
+                "Bring einen chaotischen Workflow mit. Ich helfe dir zu entscheiden, ob er manuell bleiben, stabilisiert oder zu verlässlicher Software werden sollte.",
+            primaryCta: "Gespräch buchen",
+        },
     }
 } as const;
