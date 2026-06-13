@@ -2,12 +2,13 @@
 interface Props {
     variant?: "primary" | "secondary";
     href: string;
-    target?: string
+    target?: string;
 }
 
 const { variant = "primary", href, target = "_self" } = Astro.props as Props;
 
-const baseClass = "whitespace-nowrap inline-block rounded-lg px-3 py-2 md:px-4 md:py-3 text-lg transition shadow";
+const baseClass =
+    "whitespace-nowrap inline-block rounded-lg px-3 py-2 md:px-4 md:py-3 text-lg transition shadow";
 const variantClass =
     variant === "primary"
         ? "text-background bg-primary hover:bg-primary/80 hover:text-text/90 font-semibold"

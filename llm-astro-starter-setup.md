@@ -48,9 +48,9 @@ After project creation, ensure `tsconfig.json` uses Astro's strict TypeScript co
 
 ```json
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+    "extends": "astro/tsconfigs/strict",
+    "include": [".astro/types.d.ts", "**/*"],
+    "exclude": ["dist"]
 }
 ```
 
@@ -76,9 +76,9 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
-  },
+    vite: {
+        plugins: [tailwindcss()],
+    },
 });
 ```
 
@@ -103,15 +103,15 @@ Create `prettier.config.mjs`:
 ```js
 /** @type {import("prettier").Config} */
 export default {
-  plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
-  overrides: [
-    {
-      files: "*.astro",
-      options: {
-        parser: "astro",
-      },
-    },
-  ],
+    plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+    overrides: [
+        {
+            files: "*.astro",
+            options: {
+                parser: "astro",
+            },
+        },
+    ],
 };
 ```
 
@@ -142,27 +142,27 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default [
-  {
-    ignores: [".astro/", "dist/", "node_modules/"],
-  },
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...astro.configs["flat/recommended"],
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
+    {
+        ignores: [".astro/", "dist/", "node_modules/"],
     },
-  },
-  {
-    files: ["**/*.d.ts"],
-    rules: {
-      "@typescript-eslint/triple-slash-reference": "off",
+    js.configs.recommended,
+    ...tseslint.configs.recommended,
+    ...astro.configs["flat/recommended"],
+    {
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+                ...globals.node,
+            },
+        },
     },
-  },
-  eslintConfigPrettier,
+    {
+        files: ["**/*.d.ts"],
+        rules: {
+            "@typescript-eslint/triple-slash-reference": "off",
+        },
+    },
+    eslintConfigPrettier,
 ];
 ```
 
@@ -172,17 +172,17 @@ The final `package.json` scripts should include:
 
 ```json
 {
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "check": "astro check",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "lint": "eslint \"src/**/*.{astro,js,jsx,ts,tsx}\" \"*.{js,mjs,cjs,ts}\"",
-    "validate": "npm run format:check && npm run check && npm run lint && npm run build",
-    "preview": "astro preview",
-    "astro": "astro"
-  }
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "check": "astro check",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "lint": "eslint \"src/**/*.{astro,js,jsx,ts,tsx}\" \"*.{js,mjs,cjs,ts}\"",
+        "validate": "npm run format:check && npm run check && npm run lint && npm run build",
+        "preview": "astro preview",
+        "astro": "astro"
+    }
 }
 ```
 
@@ -223,8 +223,8 @@ Create a minimal `src/layouts/BaseLayout.astro`:
 import "../styles/global.css";
 
 interface Props {
-  title: string;
-  description: string;
+    title: string;
+    description: string;
 }
 
 const { title, description } = Astro.props;
@@ -232,19 +232,19 @@ const { title, description } = Astro.props;
 
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-  </head>
-  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
-    <main class="mx-auto max-w-5xl px-6 py-16">
-      <slot />
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={description} />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title}</title>
+    </head>
+    <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+        <main class="mx-auto max-w-5xl px-6 py-16">
+            <slot />
+        </main>
+    </body>
 </html>
 ```
 
@@ -256,21 +256,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Astro Landing Page Starter"
-  description="A clean Astro and Tailwind starter for a static landing page."
+    title="Astro Landing Page Starter"
+    description="A clean Astro and Tailwind starter for a static landing page."
 >
-  <section class="space-y-6">
-    <p class="text-sm font-semibold tracking-wide text-slate-500 uppercase">
-      Starter
-    </p>
-    <h1 class="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
-      Astro Landing Page Starter
-    </h1>
-    <p class="max-w-2xl text-lg text-slate-700">
-      Replace this page with project-specific content, sections, assets, and SEO
-      metadata.
-    </p>
-  </section>
+    <section class="space-y-6">
+        <p class="text-sm font-semibold tracking-wide text-slate-500 uppercase">
+            Starter
+        </p>
+        <h1
+            class="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl"
+        >
+            Astro Landing Page Starter
+        </h1>
+        <p class="max-w-2xl text-lg text-slate-700">
+            Replace this page with project-specific content, sections, assets,
+            and SEO metadata.
+        </p>
+    </section>
 </BaseLayout>
 ```
 

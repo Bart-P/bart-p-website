@@ -32,14 +32,16 @@ const { content } = Astro.props as Props;
         title={content.title}
         intro={content.intro}
     />
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         {
             content.cards.map((card, index) => (
                 <Card
                     variant={index === 0 ? "highlight" : "default"}
-                    class={index === 0
-                        ? "flex flex-2/5 flex-col justify-between gap-3"
-                        : "flex flex-2/5 flex-col justify-between"}
+                    class={
+                        index === 0
+                            ? "flex flex-2/5 flex-col justify-between gap-3"
+                            : "flex flex-2/5 flex-col justify-between"
+                    }
                 >
                     <div class="space-y-3">
                         <h3 class="flex items-center gap-2 text-xl font-bold">
@@ -51,11 +53,9 @@ const { content } = Astro.props as Props;
                     <div class="space-y-3">
                         <h4 class="font-bold">{card.bestForTitle}</h4>
                         <ul>
-                            {
-                                card.bestFor.map((item) => (
-                                    <IconListItem>{item}</IconListItem>
-                                ))
-                            }
+                            {card.bestFor.map((item) => (
+                                <IconListItem>{item}</IconListItem>
+                            ))}
                         </ul>
                     </div>
                     <div class="space-y-3">
@@ -68,17 +68,21 @@ const { content } = Astro.props as Props;
     </div>
     <Card class="flex-2/5 space-y-3">
         <h4
-            class="border-border text-muted w-full md:border-b md:pb-6 md:text-center font-bold"
+            class="border-border text-muted w-full font-bold md:border-b md:pb-6 md:text-center"
         >
             {content.websiteOffer.title}
         </h4>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
             <div class="space-y-3">
-                <p class="text-secondary font-bold">{content.websiteOffer.price}</p>
+                <p class="text-secondary font-bold">
+                    {content.websiteOffer.price}
+                </p>
                 <p>{content.websiteOffer.description}</p>
             </div>
             <div class="space-y-3">
-                <h4 class="text-muted font-bold">{content.websiteOffer.bestForTitle}</h4>
+                <h4 class="text-muted font-bold">
+                    {content.websiteOffer.bestForTitle}
+                </h4>
                 <ul>
                     {
                         content.websiteOffer.bestFor.map((item) => (
@@ -88,7 +92,9 @@ const { content } = Astro.props as Props;
                 </ul>
             </div>
             <div class="space-y-3">
-                <h4 class="text-muted font-bold">{content.websiteOffer.resultTitle}</h4>
+                <h4 class="text-muted font-bold">
+                    {content.websiteOffer.resultTitle}
+                </h4>
                 <p>{content.websiteOffer.result}</p>
             </div>
         </div>

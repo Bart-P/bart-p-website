@@ -5,25 +5,25 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default [
-  {
-    ignores: [".astro/", "dist/", "node_modules/"],
-  },
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...astro.configs["flat/recommended"],
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
+    {
+        ignores: [".astro/", "dist/", "node_modules/"],
     },
-  },
-  {
-    files: ["**/*.d.ts"],
-    rules: {
-      "@typescript-eslint/triple-slash-reference": "off",
+    js.configs.recommended,
+    ...tseslint.configs.recommended,
+    ...astro.configs["flat/recommended"],
+    {
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+                ...globals.node,
+            },
+        },
     },
-  },
-  eslintConfigPrettier,
+    {
+        files: ["**/*.d.ts"],
+        rules: {
+            "@typescript-eslint/triple-slash-reference": "off",
+        },
+    },
+    eslintConfigPrettier,
 ];

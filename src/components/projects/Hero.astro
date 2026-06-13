@@ -13,7 +13,7 @@ interface Props {
 const { content } = Astro.props as Props;
 ---
 
-<div class="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-6">
+<div class="flex flex-col flex-wrap gap-6 md:flex-row md:flex-nowrap">
     <div class="my-auto flex-1/2 space-y-8 pr-4 md:min-w-[365px]">
         <h1 class="text-text text-4xl leading-tight font-bold">
             {content.title}
@@ -26,9 +26,9 @@ const { content } = Astro.props as Props;
             {content.info}
         </p>
     </div>
-    <div class="md:flex-1/2 w-full">
+    <div class="w-full md:flex-1/2">
         <img
-            class="max-w-[70%] md:max-w-full rounded-lg mx-auto [mask-image:linear-gradient(to_right,transparent_0%,black_50%,black_100%)] object-cover [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_50%,black_100%)]"
+            class="mx-auto max-w-[70%] rounded-lg [mask-image:linear-gradient(to_right,transparent_0%,black_50%,black_100%)] object-cover [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_50%,black_100%)] md:max-w-full"
             src={content.image.src}
         />
     </div>

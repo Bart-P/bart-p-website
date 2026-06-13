@@ -19,7 +19,9 @@ const common = commonContent[lang];
 
 <BaseLayout title={title} description={description} lang={lang}>
     <NavBar content={common.nav} />
-    <div class="max-w-6xl space-y-18 p-3 sm:mx-3 md:mx-auto md:p-6 my-6 md:my-3">
+    <div
+        class="my-6 max-w-6xl space-y-18 p-3 sm:mx-3 md:mx-auto md:my-3 md:p-6"
+    >
         <slot />
     </div>
     <Footer content={common.footer} />

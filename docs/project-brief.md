@@ -17,12 +17,12 @@
 - Small businesses, especially e-commerce and operations-heavy teams
 - Initial outreach pool: LinkedIn contacts connected to e-commerce/Amazon work
 - Typical tooling in their current setup:
-  - repeated ChatGPT prompts
-  - custom GPTs
-  - prompt libraries in Docs/Sheets
-  - n8n / Make / Zapier workflows
-  - Excel / Google Sheets as internal systems
-  - AI-built prototypes and manual copy-paste processes
+    - repeated ChatGPT prompts
+    - custom GPTs
+    - prompt libraries in Docs/Sheets
+    - n8n / Make / Zapier workflows
+    - Excel / Google Sheets as internal systems
+    - AI-built prototypes and manual copy-paste processes
 
 ## Pain Points To Address
 
@@ -63,10 +63,10 @@
 
 - Present work honestly as selected proof of capability, not as inflated enterprise case studies.
 - Primary proof order:
-  1. Listegy
-  2. Expensior
-  3. Logistics website
-  4. E-commerce/operations background
+    1. Listegy
+    2. Expensior
+    3. Logistics website
+    4. E-commerce/operations background
 
 ## Compliance Notes
 

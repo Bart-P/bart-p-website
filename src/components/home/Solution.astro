@@ -4,38 +4,42 @@ import SectionHeader from "../ui/SectionHeader.astro";
 import Card from "../ui/Card.astro";
 
 interface Props {
-  content: {
-    sectionLabel: string;
-    title: string;
-    intro: string;
-    transformations: readonly {
-      from: string;
-      to: string;
-      description: string;
-    }[];
-  };
+    content: {
+        sectionLabel: string;
+        title: string;
+        intro: string;
+        transformations: readonly {
+            from: string;
+            to: string;
+            description: string;
+        }[];
+    };
 }
 
 const { content } = Astro.props as Props;
 ---
 
 <div class="space-y-6">
-  <SectionHeader
-    label={content.sectionLabel}
-    title={content.title}
-    intro={content.intro}
-  />
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-    {
-      content.transformations.map((item) => (
-        <Card class="space-y-6">
-          <h3 class="flex items-center gap-2 text-xl font-bold">
-            {item.from} <Icon name="lucide:arrow-right" class="text-secondary" />
-            {item.to}
-          </h3>
-          <p>{item.description}</p>
-        </Card>
-      ))
-    }
-  </div>
+    <SectionHeader
+        label={content.sectionLabel}
+        title={content.title}
+        intro={content.intro}
+    />
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        {
+            content.transformations.map((item) => (
+                <Card class="space-y-6">
+                    <h3 class="flex items-center gap-2 text-xl font-bold">
+                        {item.from}{" "}
+                        <Icon
+                            name="lucide:arrow-right"
+                            class="text-secondary"
+                        />
+                        {item.to}
+                    </h3>
+                    <p>{item.description}</p>
+                </Card>
+            ))
+        }
+    </div>
 </div>

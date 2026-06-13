@@ -7,8 +7,7 @@ export const homeContent = {
         },
         hero: {
             title: "AI-assisted internal tools for e-commerce teams.",
-            intro:
-                "I help e-commerce teams and agencies turn prompt chaos, spreadsheets, and fragile automations into reliable software their team can actually use.",
+            intro: "I help e-commerce teams and agencies turn prompt chaos, spreadsheets, and fragile automations into reliable software their team can actually use.",
             primaryCta: "Book a call",
             secondaryCta: "See selected work",
             proof: "10+ years in e-commerce and operations, plus 3+ years of hands-on software development.",
@@ -19,11 +18,10 @@ export const homeContent = {
         problem: {
             sectionLabel: "The Problem",
             title: "AI workflows are useful. Until the team depends on them.",
-            intro:
-                "Most teams do not start by building software. They start with something simple: a useful prompt, a spreadsheet, a custom GPT, or an n8n/Make/Zapier automation.",
-            quote:
-                "Using the same prompt every week and changing it by hand is like writing invoices in Word.\nIt works. But it is not a system.",
-            listTitle: "Once the workflow becomes part of daily work, the cracks show:",
+            intro: "Most teams do not start by building software. They start with something simple: a useful prompt, a spreadsheet, a custom GPT, or an n8n/Make/Zapier automation.",
+            quote: "Using the same prompt every week and changing it by hand is like writing invoices in Word.\nIt works. But it is not a system.",
+            listTitle:
+                "Once the workflow becomes part of daily work, the cracks show:",
             painPoints: [
                 "Prompts get copied and edited by hand",
                 "Product data spread across files",
@@ -37,8 +35,7 @@ export const homeContent = {
         solution: {
             sectionLabel: "The Solution",
             title: "How messy workflows become internal tools",
-            intro:
-                "Most fragile workflows do not need a full rebuild from day one. The first step is to take what already works and give it structure.",
+            intro: "Most fragile workflows do not need a full rebuild from day one. The first step is to take what already works and give it structure.",
             transformations: [
                 {
                     from: "Prompt chaos",
@@ -69,8 +66,7 @@ export const homeContent = {
         offers: {
             sectionLabel: "Offers",
             title: "Ways to work together",
-            intro:
-                "Start with a small audit, stabilize one workflow, or build an AI-assisted internal tool when the process is already business-critical.",
+            intro: "Start with a small audit, stabilize one workflow, or build an AI-assisted internal tool when the process is already business-critical.",
             cards: [
                 {
                     title: "AI Workflow / Automation Audit",
@@ -84,8 +80,7 @@ export const homeContent = {
                         "Spreadsheet-heavy processes",
                     ],
                     resultTitle: "Result",
-                    result:
-                        "Clear next step: keep it manual, stabilize it, or turn it into software.",
+                    result: "Clear next step: keep it manual, stabilize it, or turn it into software.",
                 },
                 {
                     title: "Stabilization Sprint",
@@ -99,8 +94,7 @@ export const homeContent = {
                         "AI workflow that needs structure",
                     ],
                     resultTitle: "Result",
-                    result:
-                        "One process becomes less fragile and less dependent on copy-paste.",
+                    result: "One process becomes less fragile and less dependent on copy-paste.",
                 },
                 {
                     title: "AI-Assisted Internal Tool Build",
@@ -114,8 +108,7 @@ export const homeContent = {
                         "Processes used by the team",
                     ],
                     resultTitle: "Result",
-                    result:
-                        "A reliable internal tool built around how your team actually works.",
+                    result: "A reliable internal tool built around how your team actually works.",
                 },
             ],
             websiteOffer: {
@@ -130,8 +123,7 @@ export const homeContent = {
                     "Landing pages",
                 ],
                 resultTitle: "Result",
-                result:
-                    "A static website that is easy to maintain and does not depend on constant plugin updates.",
+                result: "A static website that is easy to maintain and does not depend on constant plugin updates.",
             },
         },
         proof: {
@@ -157,8 +149,7 @@ export const homeContent = {
             ],
             sidebar: {
                 title: "Have a workflow that should become an internal tool?",
-                body:
-                    "Or need a website without WordPress overhead?\nBring the problem. I’ll help you decide whether it should stay manual, be stabilized, or become software.",
+                body: "Or need a website without WordPress overhead?\nBring the problem. I’ll help you decide whether it should stay manual, be stabilized, or become software.",
                 primaryCta: "Book a call",
                 secondaryCta: "See selected work",
             },
@@ -169,50 +160,41 @@ export const homeContent = {
             items: [
                 {
                     question: "Who do you work with?",
-                    answer:
-                        "I mostly work with e-commerce teams, Amazon sellers, agencies, and small businesses that already use AI workflows, spreadsheets, automations, or internal tools, but need a more reliable system their team can actually use.",
+                    answer: "I mostly work with e-commerce teams, Amazon sellers, agencies, and small businesses that already use AI workflows, spreadsheets, automations, or internal tools, but need a more reliable system their team can actually use.",
                 },
                 {
                     question: "What kind of workflows do you help with?",
-                    answer:
-                        "Repeated workflows around product data, listing content, prompt libraries, spreadsheets, operations, reporting, and internal processes. The common pattern is simple: the workflow already exists, but it needs more structure, reliability, or a proper internal tool.",
+                    answer: "Repeated workflows around product data, listing content, prompt libraries, spreadsheets, operations, reporting, and internal processes. The common pattern is simple: the workflow already exists, but it needs more structure, reliability, or a proper internal tool.",
                 },
                 {
                     question: "Do you replace n8n, Make, or Zapier?",
-                    answer:
-                        "Not by default. If an automation works well, it should stay. I only recommend rebuilding parts as software when the workflow becomes too important, too fragile, or too hard to control.",
+                    answer: "Not by default. If an automation works well, it should stay. I only recommend rebuilding parts as software when the workflow becomes too important, too fragile, or too hard to control.",
                 },
                 {
                     question: "Can we start with one workflow?",
-                    answer:
-                        "Yes. That is usually the best way to start. One workflow is easier to understand, scope, stabilize, and turn into a clear next step.",
+                    answer: "Yes. That is usually the best way to start. One workflow is easier to understand, scope, stabilize, and turn into a clear next step.",
                 },
                 {
                     question: "Do you only work with e-commerce companies?",
-                    answer:
-                        "E-commerce is my strongest background, but I can also help agencies and small businesses with similar workflow problems.",
+                    answer: "E-commerce is my strongest background, but I can also help agencies and small businesses with similar workflow problems.",
                 },
                 {
                     question: "What do you not do?",
-                    answer:
-                        "I do not offer generic AI trend consulting, enterprise transformation programs, or “more prompts” as the final solution. The goal is practical systems, not more complexity.",
+                    answer: "I do not offer generic AI trend consulting, enterprise transformation programs, or “more prompts” as the final solution. The goal is practical systems, not more complexity.",
                 },
                 {
                     question: "Which stack do you use?",
-                    answer:
-                        "For internal tools, I mainly work with Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs, and AI-assisted workflows. For static websites, I use Astro and Tailwind.",
+                    answer: "For internal tools, I mainly work with Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs, and AI-assisted workflows. For static websites, I use Astro and Tailwind.",
                 },
                 {
                     question: "What happens after I book a call?",
-                    answer:
-                        "You show me the workflow or project. We talk through what currently works, where it breaks, and what the cleanest next step could be. If there is a fit, I suggest a clear next step: audit, sprint, full build, or website.",
+                    answer: "You show me the workflow or project. We talk through what currently works, where it breaks, and what the cleanest next step could be. If there is a fit, I suggest a clear next step: audit, sprint, full build, or website.",
                 },
             ],
         },
         cta: {
             title: "Ready to build an internal tool your team can actually use?",
-            body:
-                "Bring one messy workflow. I’ll help you decide whether it should stay manual, be stabilized, or become reliable software.",
+            body: "Bring one messy workflow. I’ll help you decide whether it should stay manual, be stabilized, or become reliable software.",
             primaryCta: "Book a call",
         },
     },
@@ -224,8 +206,7 @@ export const homeContent = {
         },
         hero: {
             title: "KI-gestützte interne Tools für E-Commerce-Teams.",
-            intro:
-                "Ich helfe E-Commerce-Teams und Agenturen, Prompt-Chaos, Tabellen und anfällige Automatisierungen in verlässliche Software zu verwandeln, die zu euren Abläufen passt.",
+            intro: "Ich helfe E-Commerce-Teams und Agenturen, Prompt-Chaos, Tabellen und anfällige Automatisierungen in verlässliche Software zu verwandeln, die zu euren Abläufen passt.",
             primaryCta: "Gespräch buchen",
             secondaryCta: "Ausgewählte Projekte ansehen",
             proof: "10+ Jahre in E-Commerce und Operations plus 3+ Jahre praktische Softwareentwicklung.",
@@ -236,11 +217,10 @@ export const homeContent = {
         problem: {
             sectionLabel: "Das Problem",
             title: "KI-Workflows sind nützlich. Bis das Team davon abhängt.",
-            intro:
-                "Die meisten Teams starten nicht mit Software. Sie starten mit etwas Einfachem: einem guten Prompt, einer Tabelle, einem Custom GPT oder einer n8n/Make/Zapier-Automatisierung.",
-            quote:
-                "Jede Woche denselben Prompt zu kopieren und von Hand anzupassen, ist wie Rechnungen in Word zu schreiben.\nEs funktioniert. Aber es ist kein System.",
-            listTitle: "Sobald der Workflow Teil des Alltags wird, zeigen sich die Schwachstellen:",
+            intro: "Die meisten Teams starten nicht mit Software. Sie starten mit etwas Einfachem: einem guten Prompt, einer Tabelle, einem Custom GPT oder einer n8n/Make/Zapier-Automatisierung.",
+            quote: "Jede Woche denselben Prompt zu kopieren und von Hand anzupassen, ist wie Rechnungen in Word zu schreiben.\nEs funktioniert. Aber es ist kein System.",
+            listTitle:
+                "Sobald der Workflow Teil des Alltags wird, zeigen sich die Schwachstellen:",
             painPoints: [
                 "Prompts werden kopiert und von Hand bearbeitet",
                 "Produktdaten sind über Dateien verteilt",
@@ -254,8 +234,7 @@ export const homeContent = {
         solution: {
             sectionLabel: "Die Lösung",
             title: "Wie aus unstrukturierten Workflows interne Tools werden",
-            intro:
-                "Die meisten anfälligen Workflows brauchen nicht sofort einen kompletten Neuaufbau. Der erste Schritt ist, das, was schon funktioniert, zu strukturieren.",
+            intro: "Die meisten anfälligen Workflows brauchen nicht sofort einen kompletten Neuaufbau. Der erste Schritt ist, das, was schon funktioniert, zu strukturieren.",
             transformations: [
                 {
                     from: "Prompt-Chaos",
@@ -286,8 +265,7 @@ export const homeContent = {
         offers: {
             sectionLabel: "Angebote",
             title: "So können wir zusammenarbeiten",
-            intro:
-                "Starte mit einem kompakten Audit, stabilisiere einen Workflow oder baue ein internes Tool, wenn der Prozess bereits geschäftskritisch ist.",
+            intro: "Starte mit einem kompakten Audit, stabilisiere einen Workflow oder baue ein internes Tool, wenn der Prozess bereits geschäftskritisch ist.",
             cards: [
                 {
                     title: "KI-Workflow-Audit",
@@ -301,8 +279,7 @@ export const homeContent = {
                         "Tabellenlastige Prozesse",
                     ],
                     resultTitle: "Ergebnis",
-                    result:
-                        "Klarer nächster Schritt: manuell lassen, stabilisieren oder in Software überführen.",
+                    result: "Klarer nächster Schritt: manuell lassen, stabilisieren oder in Software überführen.",
                 },
                 {
                     title: "Stabilisierungs-Sprint",
@@ -316,8 +293,7 @@ export const homeContent = {
                         "KI-Workflows ohne Struktur",
                     ],
                     resultTitle: "Ergebnis",
-                    result:
-                        "Ein Prozess wird robuster und weniger abhängig von Copy-paste.",
+                    result: "Ein Prozess wird robuster und weniger abhängig von Copy-paste.",
                 },
                 {
                     title: "Interner Tool-Build",
@@ -331,8 +307,7 @@ export const homeContent = {
                         "Team-Prozesse",
                     ],
                     resultTitle: "Ergebnis",
-                    result:
-                        "Ein verlässliches internes Tool, gebaut rund um eure echte Arbeitsweise.",
+                    result: "Ein verlässliches internes Tool, gebaut rund um eure echte Arbeitsweise.",
                 },
             ],
             websiteOffer: {
@@ -347,8 +322,7 @@ export const homeContent = {
                     "Landingpages",
                 ],
                 resultTitle: "Ergebnis",
-                result:
-                    "Eine statische Website, leicht zu pflegen und ohne ständige Plugin-Updates.",
+                result: "Eine statische Website, leicht zu pflegen und ohne ständige Plugin-Updates.",
             },
         },
         proof: {
@@ -374,8 +348,7 @@ export const homeContent = {
             ],
             sidebar: {
                 title: "Du hast einen Workflow, der ein internes Tool werden sollte?",
-                body:
-                    "Oder brauchst du eine Website ohne WordPress-Overhead?\nBring das Problem mit. Ich helfe dir zu entscheiden, ob es manuell bleiben, stabilisiert oder zu Software werden sollte.",
+                body: "Oder brauchst du eine Website ohne WordPress-Overhead?\nBring das Problem mit. Ich helfe dir zu entscheiden, ob es manuell bleiben, stabilisiert oder zu Software werden sollte.",
                 primaryCta: "Gespräch buchen",
                 secondaryCta: "Ausgewählte Projekte ansehen",
             },
@@ -386,50 +359,41 @@ export const homeContent = {
             items: [
                 {
                     question: "Mit wem arbeitest du?",
-                    answer:
-                        "Ich arbeite vor allem mit E-Commerce-Teams, Amazon-Sellern, Agenturen und kleinen Unternehmen, die bereits KI-Workflows, Tabellen, Automatisierungen oder interne Tools nutzen, aber ein verlässlicheres System brauchen.",
+                    answer: "Ich arbeite vor allem mit E-Commerce-Teams, Amazon-Sellern, Agenturen und kleinen Unternehmen, die bereits KI-Workflows, Tabellen, Automatisierungen oder interne Tools nutzen, aber ein verlässlicheres System brauchen.",
                 },
                 {
                     question: "Bei welchen Workflows hilfst du?",
-                    answer:
-                        "Bei wiederkehrenden Workflows rund um Produktdaten, Listing-Content, Prompt-Bibliotheken, Tabellen, Operations, Reporting und interne Prozesse. Das Muster ist einfach: Der Workflow existiert bereits, braucht aber mehr Struktur, Stabilität oder ein richtiges internes Tool.",
+                    answer: "Bei wiederkehrenden Workflows rund um Produktdaten, Listing-Content, Prompt-Bibliotheken, Tabellen, Operations, Reporting und interne Prozesse. Das Muster ist einfach: Der Workflow existiert bereits, braucht aber mehr Struktur, Stabilität oder ein richtiges internes Tool.",
                 },
                 {
                     question: "Ersetzt du n8n, Make oder Zapier?",
-                    answer:
-                        "Nicht standardmäßig. Wenn eine Automatisierung gut funktioniert, sollte sie bleiben. Ich empfehle nur dann, Teile als Software neu zu bauen, wenn der Workflow zu wichtig, zu anfällig oder zu schwer steuerbar wird.",
+                    answer: "Nicht standardmäßig. Wenn eine Automatisierung gut funktioniert, sollte sie bleiben. Ich empfehle nur dann, Teile als Software neu zu bauen, wenn der Workflow zu wichtig, zu anfällig oder zu schwer steuerbar wird.",
                 },
                 {
                     question: "Können wir mit einem Workflow starten?",
-                    answer:
-                        "Ja. Das ist meist der beste Start. Ein Workflow lässt sich einfacher verstehen, eingrenzen, stabilisieren und in einen klaren nächsten Schritt überführen.",
+                    answer: "Ja. Das ist meist der beste Start. Ein Workflow lässt sich einfacher verstehen, eingrenzen, stabilisieren und in einen klaren nächsten Schritt überführen.",
                 },
                 {
                     question: "Arbeitest du nur mit E-Commerce-Unternehmen?",
-                    answer:
-                        "E-Commerce ist mein stärkster Hintergrund, aber ich helfe auch Agenturen und kleinen Unternehmen mit ähnlichen Workflow-Problemen.",
+                    answer: "E-Commerce ist mein stärkster Hintergrund, aber ich helfe auch Agenturen und kleinen Unternehmen mit ähnlichen Workflow-Problemen.",
                 },
                 {
                     question: "Was bietest du nicht an?",
-                    answer:
-                        "Ich biete keine generische KI-Trend-Beratung, keine Enterprise-Transformationsprogramme und keine reinen \"mehr Prompts\"-Lösungen an. Das Ziel sind praktische Systeme, nicht mehr Komplexität.",
+                    answer: 'Ich biete keine generische KI-Trend-Beratung, keine Enterprise-Transformationsprogramme und keine reinen "mehr Prompts"-Lösungen an. Das Ziel sind praktische Systeme, nicht mehr Komplexität.',
                 },
                 {
                     question: "Welchen Stack nutzt du?",
-                    answer:
-                        "Für interne Tools arbeite ich vor allem mit Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs und KI-gestützten Workflows. Für statische Websites nutze ich Astro und Tailwind.",
+                    answer: "Für interne Tools arbeite ich vor allem mit Laravel, Vue, Inertia, Tailwind, SQLite/MySQL/PostgreSQL, APIs und KI-gestützten Workflows. Für statische Websites nutze ich Astro und Tailwind.",
                 },
                 {
                     question: "Was passiert nach der Terminbuchung?",
-                    answer:
-                        "Du zeigst mir den Workflow oder das Projekt. Wir besprechen, was aktuell funktioniert, wo es hakt und welcher nächste Schritt am saubersten ist. Wenn es passt, schlage ich einen klaren nächsten Schritt vor: Audit, Sprint, Tool-Build oder Website.",
+                    answer: "Du zeigst mir den Workflow oder das Projekt. Wir besprechen, was aktuell funktioniert, wo es hakt und welcher nächste Schritt am saubersten ist. Wenn es passt, schlage ich einen klaren nächsten Schritt vor: Audit, Sprint, Tool-Build oder Website.",
                 },
             ],
         },
         cta: {
             title: "Bereit für ein internes Tool, das zu euren Abläufen passt?",
-            body:
-                "Bring einen chaotischen Workflow mit. Ich helfe dir zu entscheiden, ob er manuell bleiben, stabilisiert oder zu verlässlicher Software werden sollte.",
+            body: "Bring einen chaotischen Workflow mit. Ich helfe dir zu entscheiden, ob er manuell bleiben, stabilisiert oder zu verlässlicher Software werden sollte.",
             primaryCta: "Gespräch buchen",
         },
     },

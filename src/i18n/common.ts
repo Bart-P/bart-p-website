@@ -29,7 +29,7 @@ export const commonContent = {
                 {
                     label: "LinkedIn",
                     href: "https://www.linkedin.com/in/bartek-para-bb43411b/",
-                    target: "_blank"
+                    target: "_blank",
                 },
             ],
         },

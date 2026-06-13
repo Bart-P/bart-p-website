@@ -8,7 +8,9 @@ const { variant = "default", class: className } = Astro.props as Props;
 
 const baseClass = "rounded-lg border p-6 shadow";
 const variantClass =
-    variant === "highlight" ? "border-primary/40 bg-primary-soft/30" : "border-border";
+    variant === "highlight"
+        ? "border-primary/40 bg-primary-soft/30"
+        : "border-border";
 ---
 
 <div class:list={[baseClass, variantClass, className]}>
