@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /v/
+
+Sitemap: https://bart-p.com/sitemap.xml
