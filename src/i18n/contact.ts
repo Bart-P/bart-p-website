@@ -34,16 +34,7 @@ export const contactContent = {
         },
         legal: {
             title: "Legal Notice",
-            label: "Information according to Section 5 DDG:",
-            name: "Bartłomiej Parafianczyk",
-            shortForm: "Short form: Bartek Para",
-            streetWithNumber: "Nockwinkel 56",
-            cityCodeWithCity: "45277 Essen",
-            country: "Germany",
-            contact: "E-Mail: bp@bart-p.com",
-            responsibleLabel: "Responsible for content according to Section 55(2) RStV:",
-            taxNr: "VAT: VAT is charged. The VAT identification number has been applied for.",
-        }
+        },
     },
     de: {
         meta: {
@@ -80,15 +71,6 @@ export const contactContent = {
         },
         legal: {
             title: "Impressum",
-            label: "Angaben gemäß § 5 DDG:",
-            name: "Bartłomiej Parafianczyk",
-            shortForm: "Kurzform: Bartek Para",
-            streetWithNumber: "Nockwinkel 56",
-            cityCodeWithCity: "45277 Essen",
-            country: "Germany",
-            contact: "E-Mail: bp@bart-p.com",
-            responsibleLabel: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
-            taxNr: "Umsatzsteuer: Umsatzsteuer wird ausgewiesen. Die Umsatzsteuer-Identifikationsnummer wurde beantragt."
-        }
+        },
     },
 } as const;

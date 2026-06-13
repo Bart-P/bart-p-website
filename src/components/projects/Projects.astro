@@ -3,7 +3,7 @@ import { type Project } from "../../types";
 import SectionHeader from "../ui/SectionHeader.astro";
 
 interface Props {
-    projects: Project[];
+    projects: readonly Project[];
 }
 
 const { projects } = Astro.props;
@@ -13,7 +13,7 @@ const { projects } = Astro.props;
     {
         projects.map((project) => (
             <div class="space-y-8">
-                <div class="flex-1/3">
+                <div>
                     <SectionHeader
                         label={project.name}
                         title={project.summary}
@@ -38,8 +38,8 @@ const { projects } = Astro.props;
                     </div>
                 </div>
                 {project.images.length > 1 ? (
-                    <div class="grid aspect-[2/1] grid-cols-2 grid-rows-2 gap-2 overflow-hidden">
-                        <div class="row-span-2 overflow-hidden">
+                    <div class="grid aspect-1/2 grid-cols-1 gap-2 overflow-hidden md:aspect-[2/1] md:grid-cols-2 md:grid-rows-2">
+                        <div class="overflow-hidden md:row-span-2">
                             <img
                                 class="h-full w-full rounded object-cover object-top"
                                 src={project.images[0]}

@@ -25,10 +25,11 @@ export const commonContent = {
                 { label: "Projects", href: "/projects" },
                 { label: "Contact", href: "/contact" },
                 { label: "Legal Notice", href: "/contact" },
-                { label: "Privacy Policy", href: "/contact" },
+                { label: "Privacy Policy", href: "/privacy-policy" },
                 {
                     label: "LinkedIn",
                     href: "https://www.linkedin.com/in/bartek-para-bb43411b/",
+                    target: "_blank"
                 },
             ],
         },
@@ -55,35 +56,35 @@ export const commonContent = {
             brand: "Bartek Para",
             tagline: "Interne Tools für E-Commerce-Teams und Agenturen.",
             links: [
-                { 
+                {
                     label: "Start",
                     href: "/de/",
-                    target: "_self"
-                },
-                { 
-                    label: "Projekte",
-                    href: "/de/projects", 
-                    target: "_self"
+                    target: "_self",
                 },
                 {
-                    label: "Kontakt", 
-                    href: "/de/contact",
-                    target: "_self"
+                    label: "Projekte",
+                    href: "/de/projects",
+                    target: "_self",
                 },
-                { 
+                {
+                    label: "Kontakt",
+                    href: "/de/contact",
+                    target: "_self",
+                },
+                {
                     label: "Impressum",
                     href: "/de/contact",
-                    target: "_self"
+                    target: "_self",
                 },
                 {
-                    label: "Datenschutz", 
-                    href: "/de/datenschutz",
-                    target: "_self"
+                    label: "Datenschutz",
+                    href: "/de/privacy-policy",
+                    target: "_self",
                 },
                 {
                     label: "LinkedIn",
                     href: "https://www.linkedin.com/in/bartek-para-bb43411b/",
-                    target: "_blank"
+                    target: "_blank",
                 },
             ],
         },

@@ -19,8 +19,10 @@ const content = contactContent[lang];
 >
     <section>
         <div class="space-y-6">
-            <div class="flex items-center justify-between gap-6">
-                <div class="flex-1/2">
+            <div
+                class="flex flex-col items-center justify-between gap-6 md:flex-row"
+            >
+                <div class="md:flex-1/2">
                     <SectionHeader
                         label={content.hero.title}
                         title={content.hero.heading}
@@ -28,7 +30,7 @@ const content = contactContent[lang];
                     />
                 </div>
 
-                <aside class="border-border flex-1/2 rounded-lg border p-6">
+                <aside class="border-border rounded-lg border p-6 md:flex-1/2">
                     <div class="mb-4">
                         <h2 class="text-primary font-semibold">
                             {content.directContact.title}
@@ -67,24 +69,23 @@ const content = contactContent[lang];
             </div>
             <section class="space-y-6">
                 <h1 class="text-2xl font-bold">{content.legal.title}</h1>
-                <ul>
-                    <li>{content.legal.label}</li>
-                    <li>{content.legal.name}</li>
-                    <li>{content.legal.shortForm}</li>
-                    <li>{content.legal.streetWithNumber}</li>
-                    <li>{content.legal.cityCodeWithCity}</li>
-                    <li>{content.legal.country}</li>
-                </ul>
-                <ul>
-                    <li>{content.legal.contact}</li>
-                    <li>
-                        {content.legal.responsibleLabel}
-                        {content.legal.name}
-                    </li>
-                    <li>
-                        {content.legal.taxNr}
-                    </li>
-                </ul>
+                {
+                    lang === "en" ? (
+                        <div
+                            class="itrk-legaltext"
+                            data-itrk-legaltext-url="https://itrk.legal/1zIp.0.18TZ-en-iframe.html"
+                        />
+                    ) : (
+                        <div
+                            class="itrk-legaltext"
+                            data-itrk-legaltext-url="https://itrk.legal/1zIp.0.18TZ-de-iframe.html"
+                        />
+                    )
+                }
+                <script
+                    is:inline
+                    src="https://www.it-recht-kanzlei.de/js/itrk-legaltext.js"
+                ></script>
             </section>
         </div>
     </section>
