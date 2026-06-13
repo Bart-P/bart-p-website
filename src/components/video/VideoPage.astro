@@ -1,0 +1,57 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import SectionHeader from "../ui/SectionHeader.astro";
+import { videoContent } from "../../i18n/video";
+import { type Lang } from "../../types";
+import { Icon } from "astro-icon/components";
+import ButtonLink from "../ui/ButtonLink.astro";
+import { commonContent } from "../../i18n/common";
+
+interface Props {
+    lang: Lang;
+    title: string;
+    description: string;
+}
+
+const { lang, title, description } = Astro.props as Props;
+
+const content = videoContent[lang];
+const common = commonContent[lang];
+---
+
+<SiteLayout title={title} description={description} lang={lang}>
+    <SectionHeader
+        label={content.hero.title}
+        title={content.hero.heading}
+        intro={content.hero.description}
+    />
+    <div class="space-y-8">
+        <button
+            class="border-primary/60 flex aspect-video w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-lg border-3 bg-[url('/assets/video_placeholder.png')] bg-cover bg-center py-3 text-white md:gap-8"
+        >
+            <h4 class="text-2xl font-bold md:text-3xl">
+                {content.video.title}
+            </h4>
+
+            <Icon
+                name="lucide:circle-play"
+                class="text-primary h-30 min-h-10 w-30 min-w-10"
+            />
+            <p class="mt-1 text-sm opacity-90 md:text-lg">
+                {content.video.warning}
+            </p>
+        </button>
+        <div
+            class="mb-8 flex flex-col items-center justify-center gap-6 md:flex-row"
+        >
+            <h2 class="text-2xl font-bold">{content.cta.title}</h2>
+            <ButtonLink
+                href={common.nav.primaryCta.href}
+                variant="primary"
+                target="_blank"
+            >
+                {common.nav.primaryCta.label}
+            </ButtonLink>
+        </div>
+    </div>
+</SiteLayout>
