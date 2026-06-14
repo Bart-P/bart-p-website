@@ -29,6 +29,11 @@ export const commonContent = {
                 { label: "Legal Notice", href: "/contact" },
                 { label: "Privacy Policy", href: "/privacy-policy" },
                 {
+                    label: "Cookie Settings",
+                    href: "/privacy-policy",
+                    dataCc: "c-settings",
+                },
+                {
                     label: "LinkedIn",
                     href: siteConfig.linkedinHref,
                     target: "_blank",
@@ -82,6 +87,12 @@ export const commonContent = {
                     label: "Datenschutz",
                     href: "/de/privacy-policy",
                     target: "_self",
+                },
+                {
+                    label: "Cookie-Einstellungen",
+                    href: "/de/privacy-policy",
+                    target: "_self",
+                    dataCc: "c-settings",
                 },
                 {
                     label: "LinkedIn",

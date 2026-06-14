@@ -7,6 +7,7 @@ interface Props {
             label: string;
             href: string;
             target?: string;
+            dataCc?: string;
         }[];
     };
 }
@@ -30,6 +31,7 @@ const { content: footer } = Astro.props as Props;
                             class="cursor-pointer"
                             href={item.href}
                             target={item.target}
+                            data-cc={item.dataCc}
                         >
                             {item.label}
                         </a>
