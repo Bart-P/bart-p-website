@@ -6,28 +6,53 @@ import { type Lang } from "../../types";
 import { Icon } from "astro-icon/components";
 import ButtonLink from "../ui/ButtonLink.astro";
 import { commonContent } from "../../i18n/common";
+import { siteConfig } from "../../config/site";
 
 interface Props {
     lang: Lang;
-    title: string;
-    description: string;
 }
 
-const { lang, title, description } = Astro.props as Props;
+const { lang } = Astro.props as Props;
 
 const content = videoContent[lang];
 const common = commonContent[lang];
 ---
 
-<SiteLayout title={title} description={description} lang={lang}>
+<SiteLayout
+    title={content.meta.title}
+    description={content.meta.description}
+    lang={lang}
+>
     <SectionHeader
         label={content.hero.title}
         title={content.hero.heading}
         intro={content.hero.description}
     />
     <div class="space-y-8">
+        <div id="yt"></div>
+        <div
+            id="yt-error"
+            class="text-text mx-2 hidden space-y-3 rounded-lg border border-red-600 bg-red-600/10 p-4 py-8 text-center md:mx-6"
+        >
+            <h4 class="text-lg font-bold">{content.video.error.title}</h4>
+            <div>
+                <p class="">{content.video.error.description}</p>
+                <p class="">{content.video.error.apology}</p>
+            </div>
+            <div class="te flex justify-center gap-5">
+                <a class="text-secondary underline" href={siteConfig.emailHref}
+                    >{content.video.error.emailLabel}</a
+                >
+                <a
+                    class="text-secondary underline"
+                    href={siteConfig.linkedinHref}
+                    >{content.video.error.linkedinLabel}</a
+                >
+            </div>
+        </div>
         <button
-            class="border-primary/60 flex aspect-video w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-lg border-3 bg-[url('/assets/video_placeholder.png')] bg-cover bg-center py-3 text-white md:gap-8"
+            id="yt-load-button"
+            class="border-primary/60 flex aspect-video w-full cursor-pointer flex-col items-center justify-center gap-3 overflow-hidden rounded border-3 bg-[url('/assets/video_placeholder.png')] bg-cover bg-center py-3 text-white md:gap-8"
         >
             <h4 class="text-2xl font-bold md:text-3xl">
                 {content.video.title}
@@ -44,7 +69,12 @@ const common = commonContent[lang];
         <div
             class="mb-8 flex flex-col items-center justify-center gap-6 md:flex-row"
         >
-            <h2 class="text-2xl font-bold">{content.cta.title}</h2>
+            <h2 class="text-2xl font-bold" id="cta-title">
+                {content.cta.title}
+            </h2>
+            <h2 class="hidden text-2xl font-bold" id="cta-error-title">
+                {content.video.error.bookACallTitle}
+            </h2>
             <ButtonLink
                 href={common.nav.primaryCta.href}
                 variant="primary"
@@ -55,3 +85,43 @@ const common = commonContent[lang];
         </div>
     </div>
 </SiteLayout>
+
+<script>
+    const youtubeId = new URLSearchParams(window.location.search).get("yt");
+    const button = document.getElementById("yt-load-button");
+    const container = document.getElementById("yt");
+    const error = document.getElementById("yt-error");
+    const ctaTitle = document.getElementById("cta-title");
+    const ctaErrorTitle = document.getElementById("cta-error-title");
+    const isValidYoutubeId =
+        youtubeId !== null && /^[a-zA-Z0-9_-]{11}$/.test(youtubeId);
+
+    if (!isValidYoutubeId && button instanceof HTMLButtonElement) {
+        error?.classList.remove("hidden");
+        button.disabled = true;
+        button.classList.add("hidden");
+
+        if (ctaTitle && ctaErrorTitle) {
+            ctaTitle.classList.add("hidden");
+            ctaErrorTitle.classList.remove("hidden");
+        }
+    }
+
+    button?.addEventListener("click", () => {
+        if (!isValidYoutubeId || !container || !button) {
+            error?.classList.remove("hidden");
+            return;
+        }
+
+        const iframe = document.createElement("iframe");
+        iframe.className = "aspect-video w-full rounded-lg";
+        iframe.src = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1`;
+        iframe.title = "YouTube video player";
+        iframe.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+
+        container.replaceChildren(iframe);
+        button.remove();
+    });
+</script>

@@ -1,5 +1,9 @@
 export const videoContent = {
     en: {
+        meta: {
+            title: "Personal Video",
+            description: "",
+        },
         hero: {
             title: "Personal video",
             heading: "I recorded a short video for you",
@@ -9,12 +13,25 @@ export const videoContent = {
         video: {
             title: "Click to play video",
             warning: "YouTube will be loaded after clicking.",
+            error: {
+                title: "Something went wrong with the video link.",
+                description:
+                    "It looks like the video link is missing or incomplete. Send me a quick message by email or LinkedIn and I’ll send you the correct link.",
+                apology: "Sorry for the inconvenience.",
+                emailLabel: "Email me",
+                linkedinLabel: "Message me on LinkedIn",
+                bookACallTitle: "Still want to talk?",
+            },
         },
         cta: {
             title: "Watched the video? Let’s talk.",
         },
     },
     de: {
+        meta: {
+            title: "Persönliches Video",
+            description: "",
+        },
         hero: {
             title: "Persönliches Video",
             heading: "Ich habe ein kurzes Video für dich aufgenommen",
@@ -24,6 +41,15 @@ export const videoContent = {
         video: {
             title: "Video abspielen",
             warning: "YouTube wird nach dem Klick geladen.",
+            error: {
+                title: "Mit dem Videolink stimmt etwas nicht.",
+                description:
+                    "Es sieht so aus, als wäre der Videolink unvollständig oder fehlt. Schreib mir kurz per E-Mail oder LinkedIn, dann sende ich dir den richtigen Link.",
+                apology: "Sorry für die Umstände.",
+                emailLabel: "E-Mail schreiben",
+                linkedinLabel: "Auf LinkedIn schreiben",
+                bookACallTitle: "Termin trotzdem buchen?",
+            },
         },
         cta: {
             title: "Video gesehen? Lass uns sprechen.",
