@@ -1,3 +1,5 @@
+import { siteConfig } from "../config/site";
+
 export const commonContent = {
     en: {
         nav: {
@@ -14,7 +16,7 @@ export const commonContent = {
             },
             primaryCta: {
                 label: "Book a call",
-                href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0eEY05Vnb93KJ0RNbf2JA9uqTkll3iPTRUvgzghKgDeCphHN3jHVJtfCVeLoT5b1m02D4YI4rJ",
+                href: siteConfig.bookingHref,
             },
         },
         footer: {
@@ -28,7 +30,7 @@ export const commonContent = {
                 { label: "Privacy Policy", href: "/privacy-policy" },
                 {
                     label: "LinkedIn",
-                    href: "https://www.linkedin.com/in/bartek-para-bb43411b/",
+                    href: siteConfig.linkedinHref,
                     target: "_blank",
                 },
             ],
@@ -49,7 +51,7 @@ export const commonContent = {
             },
             primaryCta: {
                 label: "Gespräch buchen",
-                href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0eEY05Vnb93KJ0RNbf2JA9uqTkll3iPTRUvgzghKgDeCphHN3jHVJtfCVeLoT5b1m02D4YI4rJ",
+                href: siteConfig.bookingHref,
             },
         },
         footer: {
@@ -83,7 +85,7 @@ export const commonContent = {
                 },
                 {
                     label: "LinkedIn",
-                    href: "https://www.linkedin.com/in/bartek-para-bb43411b/",
+                    href: siteConfig.linkedinHref,
                     target: "_blank",
                 },
             ],

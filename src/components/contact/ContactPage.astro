@@ -1,5 +1,6 @@
 ---
 import { contactContent } from "../../i18n/contact";
+import { siteConfig } from "../../config/site";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import { type Lang } from "../../types";
 import SectionHeader from "../ui/SectionHeader.astro";
@@ -46,10 +47,10 @@ const content = contactContent[lang];
                                 {content.directContact.email.label}
                             </p>
                             <a
-                                href={content.directContact.email.href}
+                                href={siteConfig.emailHref}
                                 class="text-secondary underline"
                             >
-                                {content.directContact.email.value}
+                                {siteConfig.email}
                             </a>
                         </div>
 
@@ -58,10 +59,10 @@ const content = contactContent[lang];
                                 {content.directContact.phone.label}
                             </p>
                             <a
-                                href={content.directContact.phone.href}
+                                href={siteConfig.phoneHref}
                                 class="text-secondary underline"
                             >
-                                {content.directContact.phone.value}
+                                {siteConfig.phone}
                             </a>
                         </div>
                     </div>

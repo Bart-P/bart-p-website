@@ -15,7 +15,7 @@ export const contactContent = {
             title: "Book a call",
             description:
                 "We can talk about your current workflow, where things break, and whether it should stay manual, be stabilized, or become reliable software.",
-            calendarLabel: "Google Calendar booking",
+            calendarLabel: "Booking calendar",
         },
         directContact: {
             title: "Direct contact",
@@ -23,13 +23,9 @@ export const contactContent = {
                 "Prefer to write first or call directly? Use the details below.",
             email: {
                 label: "E-Mail",
-                value: "bp@bart-p.com",
-                href: "mailto:bp@bart-p.com",
             },
             phone: {
                 label: "Phone",
-                value: "+49 15151 376 888",
-                href: "tel:+4915151376888",
             },
         },
         legal: {
@@ -52,7 +48,7 @@ export const contactContent = {
             title: "Gespräch buchen",
             description:
                 "Wir können über deinen aktuellen Workflow sprechen, wo es hakt und ob er manuell bleiben, stabilisiert oder zu verlässlicher Software werden sollte.",
-            calendarLabel: "Google Kalender Terminbuchung",
+            calendarLabel: "Terminbuchung",
         },
         directContact: {
             title: "Direkter Kontakt",
@@ -60,13 +56,9 @@ export const contactContent = {
                 "Du möchtest lieber zuerst schreiben oder direkt anrufen? Nutze die Kontaktdaten unten.",
             email: {
                 label: "E-Mail",
-                value: "bp@bart-p.com",
-                href: "mailto:bp@bart-p.com",
             },
             phone: {
                 label: "Telefon",
-                value: "+49 15151 376 888",
-                href: "tel:+4915151376888",
             },
         },
         legal: {
