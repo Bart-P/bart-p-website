@@ -12,7 +12,7 @@ export const videoContent = {
         },
         video: {
             title: "Click to play video",
-            warning: "YouTube will be loaded after clicking.",
+            warning: "Clicking loads YouTube. Data may be transferred to YouTube/Google.",
             error: {
                 title: "Something went wrong with the video link.",
                 description:
@@ -40,14 +40,14 @@ export const videoContent = {
         },
         video: {
             title: "Video abspielen",
-            warning: "YouTube wird nach dem Klick geladen.",
+            warning: "Beim Klick wird YouTube geladen. Dabei können Daten an YouTube/Google übertragen werden.",
             error: {
                 title: "Mit dem Videolink stimmt etwas nicht.",
                 description:
-                    "Es sieht so aus, als wäre der Videolink unvollständig oder fehlt. Schreib mir kurz per E-Mail oder LinkedIn, dann sende ich dir den richtigen Link.",
+                    "Es sieht so aus, als wäre der Videolink unvollständig. Schreib mir kurz per E-Mail oder LinkedIn, dann sende ich dir den richtigen Link.",
                 apology: "Sorry für die Umstände.",
-                emailLabel: "E-Mail schreiben",
-                linkedinLabel: "Auf LinkedIn schreiben",
+                emailLabel: "E-Mail",
+                linkedinLabel: "LinkedIn",
                 bookACallTitle: "Termin trotzdem buchen?",
             },
         },
