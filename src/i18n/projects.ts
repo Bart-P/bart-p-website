@@ -11,7 +11,7 @@ export const projectsContent = {
                 "Tools, AI-assisted workflows, and business websites built around real e-commerce and operations problems.",
             info: "Each project shows the same pattern: messy workflows, scattered data, or repeated decisions turned into something more structured and usable.",
             image: {
-                src: "../../assets/projects_hero_image.png",
+                src: "/assets/projects_hero_image.png",
             },
         },
         projects: [
@@ -103,7 +103,7 @@ export const projectsContent = {
                 "Einige Beispiele für interne Tools, KI-gestützte Workflows und Business-Websites, die ich gebaut habe oder aktuell baue.",
             info: "Einige Projekte sind intern oder noch in Entwicklung. Deshalb liegt der Fokus hier auf dem Problem, der Struktur und darauf, was die Arbeit zeigt.",
             image: {
-                src: "../../assets/projects_hero_image.png",
+                src: "/assets/projects_hero_image.png",
             },
         },
         projects: [

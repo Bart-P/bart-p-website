@@ -17,7 +17,6 @@ Preparation repository for the upcoming Astro landing page build for `bart-p.com
 ## Planned Structure
 
 - `docs/`: project brief, content outline, SEO/GEO plan, assets inventory, and todo
-- `assets/source-material/`: dropzone for screenshots, references, and visual assets
 
 ## Next Build Steps
 
