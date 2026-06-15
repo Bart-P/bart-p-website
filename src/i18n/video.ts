@@ -12,7 +12,8 @@ export const videoContent = {
         },
         video: {
             title: "Click to play video",
-            warning: "Clicking loads YouTube. Data may be transferred to YouTube/Google.",
+            warning:
+                "Clicking loads YouTube. Data may be transferred to YouTube/Google.",
             error: {
                 title: "Something went wrong with the video link.",
                 description:
@@ -40,7 +41,8 @@ export const videoContent = {
         },
         video: {
             title: "Video abspielen",
-            warning: "Beim Klick wird YouTube geladen. Dabei können Daten an YouTube/Google übertragen werden.",
+            warning:
+                "Beim Klick wird YouTube geladen. Dabei können Daten an YouTube/Google übertragen werden.",
             error: {
                 title: "Mit dem Videolink stimmt etwas nicht.",
                 description:

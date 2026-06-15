@@ -72,6 +72,18 @@ export const projectsContent = {
                     "/assets/expensior/expensior_expenses.png",
                 ],
             },
+            {
+                name: "Personalized Video Page",
+                summary:
+                    "Lightweight outreach landing page for sending personalized sales videos.",
+                description:
+                    "Personalized sales videos often get sent as plain links without context, structure, or a clear next step. This page turns a video link into a focused outreach landing page with a short message, YouTube placeholder, consent-aware loading, error state, and direct booking CTA.",
+                outcome:
+                    "A simple outreach workflow can become more structured and easier to act on: the recipient gets the video, the context, and the next step in one clean page.",
+                stack: ["Astro", "Tailwind", "YouTube", "Google Calendar"],
+                status: "delivered",
+                images: ["/assets/video-landing-page/video_landing_page.png"],
+            },
         ],
         cta: {
             title: "Have a workflow that should become software?",
@@ -151,6 +163,18 @@ export const projectsContent = {
                     "/assets/expensior/expensior_loan_edit.png",
                     "/assets/expensior/expensior_expenses.png",
                 ],
+            },
+            {
+                name: "Personalisierte Video-Seite",
+                summary:
+                    "Schlanke Outreach-Landingpage für personalisierte Sales-Videos.",
+                description:
+                    "Personalisierte Sales-Videos werden oft als einfache Links ohne Kontext oder klaren nächsten Schritt verschickt. Diese Seite macht daraus eine fokussierte Outreach-Landingpage mit kurzer Nachricht, YouTube-Platzhalter, consent-bewusstem Laden, Fehlerzustand und direkter Buchungs-CTA.",
+                outcome:
+                    "Ein kleiner Outreach-Workflow wird leichter nutzbar: Der Empfänger bekommt Video, Kontext und nächsten Schritt auf einer klaren Seite.",
+                stack: ["Astro", "Tailwind", "YouTube", "Google Calendar"],
+                status: "live",
+                images: ["/assets/video-landing-page/video_landing_page.png"],
             },
         ],
         cta: {

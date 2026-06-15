@@ -134,17 +134,22 @@ export const homeContent = {
                 {
                     name: "Listegy",
                     description:
-                        "AI-assisted e-commerce listing workflow turned into structured software.",
+                        "AI-guided Amazon listing workflow for text, image, and infographic generation.",
+                },
+                {
+                    name: "Infographics Background Generator",
+                    description:
+                        "n8n workflow used to generate persona-based background scenes for e-commerce visuals.",
                 },
                 {
                     name: "Expensior",
                     description:
-                        "Internal expense and payment workflow replacing spreadsheet-heavy tracking.",
+                        "Expense and payment tool replacing spreadsheet-heavy tracking.",
                 },
                 {
-                    name: "Logistics Website",
+                    name: "Personalized Video Page",
                     description:
-                        "Clean static business website without WordPress/plugin overhead.",
+                        "Lightweight outreach landing page for sending personalized sales videos with a direct booking CTA.",
                 },
             ],
             sidebar: {
@@ -341,9 +346,9 @@ export const homeContent = {
                         "Interner Ausgaben- und Zahlungs-Workflow statt tabellenlastigem Tracking.",
                 },
                 {
-                    name: "Logistics Website",
+                    name: "Personalisierte Video-Seite",
                     description:
-                        "Saubere statische Business-Website ohne WordPress- und Plugin-Overhead.",
+                        "Schlanke Outreach-Landingpage für personalisierte Sales-Videos mit direkter Buchungs-CTA.",
                 },
             ],
             sidebar: {
