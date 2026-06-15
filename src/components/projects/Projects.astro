@@ -41,21 +41,21 @@ const { projects } = Astro.props;
                     <div class="grid aspect-1/2 grid-cols-1 gap-2 overflow-hidden md:aspect-[2/1] md:grid-cols-2 md:grid-rows-2">
                         <div class="overflow-hidden md:row-span-2">
                             <img
-                                class="h-full w-full rounded object-cover object-top"
+                                class="h-full w-full rounded-lg object-cover object-top"
                                 src={project.images[0]}
                             />
                         </div>
 
                         <div class="overflow-hidden">
                             <img
-                                class="h-full w-full rounded object-cover object-top"
+                                class="h-full w-full rounded-lg object-cover object-top"
                                 src={project.images[1]}
                             />
                         </div>
 
                         <div class="overflow-hidden">
                             <img
-                                class="h-full w-full rounded object-cover object-top"
+                                class="h-full w-full rounded-lg object-cover object-top"
                                 src={project.images[2]}
                             />
                         </div>
@@ -63,7 +63,7 @@ const { projects } = Astro.props;
                 ) : (
                     <div class="aspect-2/1 overflow-hidden">
                         <img
-                            class="h-full w-full rounded object-cover object-top"
+                            class="h-full w-full rounded-lg object-cover object-top"
                             src={project.images[0]}
                         />
                     </div>
