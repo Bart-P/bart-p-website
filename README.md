@@ -1,32 +1,69 @@
-# bart-p.com Planning Setup
+# bart-p.com
 
-Preparation repository for the upcoming Astro landing page build for `bart-p.com`.
+Personal website for Bartek Para, built with Astro and Tailwind CSS.
 
-## Current Scope
+The site presents my freelance work around AI-assisted internal tools, automation workflows, and selected software projects. It is published at [bart-p.com](https://bart-p.com).
 
-- Planning docs first, implementation second.
-- Bilingual website planning (English + German) with a simple copy-first approach.
-- Main conversion goal: booked intro calls via Google Calendar.
+## Stack
 
-## Positioning
+- Astro
+- TypeScript
+- Tailwind CSS
+- ESLint
+- Prettier
+- npm
 
-- Main offer: turn messy AI workflows, prompt libraries, fragile automations, and AI-built prototypes into reliable internal software.
-- Short line: `From prompt chaos to reliable internal tools.`
-- Public name: `Bartek Para`.
+## Project Structure
 
-## Planned Structure
+```txt
+src/
+  components/   Reusable Astro components
+  config/       Site-wide links and contact settings
+  i18n/         English and German copy
+  layouts/      Base and site layouts
+  pages/        Astro routes
+  styles/       Global styles
 
-- `docs/`: project brief, content outline, SEO/GEO plan, assets inventory, and todo
+public/
+  assets/       Static images and screenshots
+```
 
-## Next Build Steps
+## Development
 
-1. Initialize Astro project
-2. Add Tailwind setup
-3. Add `mise.toml` runtime config
-4. Add tmux startup script
-5. Build section-by-section landing page
+Install dependencies:
 
-## Security
+```bash
+npm install
+```
 
-- Keep secrets and credentials outside the repository.
-- Keep legal identity data only where required for compliance pages.
+Start the local dev server:
+
+```bash
+npm run dev
+```
+
+Run validation before publishing changes:
+
+```bash
+npm run validate
+```
+
+This runs formatting checks, Astro type checks, linting, and a production build.
+
+## Scripts
+
+- `npm run dev` - start the Astro dev server
+- `npm run build` - build the site
+- `npm run preview` - preview the production build locally
+- `npm run check` - run Astro checks
+- `npm run lint` - run ESLint
+- `npm run format` - format the codebase
+- `npm run validate` - run all validation steps
+
+## Notes
+
+The `scripts/dev-tmux.sh` script is an optional personal workflow helper for starting my local tmux-based development setup. It is not required to work on the site.
+
+## License
+
+This is the source code for a personal website. Unless a license is added, the contents are not licensed for reuse.
